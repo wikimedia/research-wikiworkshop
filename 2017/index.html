@@ -1,0 +1,574 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wiki Workshop 2017</title>
+<meta description="Wiki Workshop 2017" />
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="bootstrap/assets/css/docs.css" rel="stylesheet">
+<link href="bootstrap/assets/css/prettify.css" rel="stylesheet">
+
+<style>
+.gap-right { margin-right:5px; }
+.gap-left { margin-left:5px; }
+.authors { font-weight:bold; margin-top:3mm; }
+.talk-title { font-weight:bold; margin-bottom:3mm; }
+.table-nonfluid { width: auto !important; }
+.myjumbotron {
+  background: #0087CA; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #000000 0%, #777777 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#000000), color-stop(100%,#777777)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(45deg,  #000000 0%,#777777 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(45deg,  #000000 0%,#777777 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(45deg,  #000000 0%,#777777 100%); /* IE10+ */
+  background: linear-gradient(45deg,  #0087CA 0%,#D5F1FF 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.0), inset 0 -3px 7px rgba(0,0,0,.0);
+     -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.0), inset 0 -3px 7px rgba(0,0,0,.0);
+          box-shadow: inset 0 3px 7px rgba(0,0,0,.0), inset 0 -3px 7px rgba(0,0,0,.0);
+}
+</style>
+
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+  <!-- Start Facebook button -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- End Facebook button -->
+
+  <!-- Navbar
+  ================================================== -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!--a class="brand" href="./index.html">Bootstrap</a-->
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li class="">
+              <a href=""><b>Wiki Workshop 2017</b></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--
+-->
+
+  <!-- Subhead
+  ================================================== -->
+  <header class="jumbotron subhead myjumbotron" id="overview">
+    <div class="container">
+      <h1>Wiki Workshop 2017</h1>
+      <p class="lead">
+        A forum bringing together researchers exploring all aspects of Wikipedia and other Wikimedia sites.
+        Held at <a href="http://www.www2017.com.au">WWW&nbsp;2017</a> in Perth, Australia, on April 4, 2017.
+      </p>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <div class="row-fluid" style="margin-top:1em">
+          <div class="span12" style="text-align:center">
+            <div class="fb-like" data-href="http://wikiworkshop.org" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+            <br/>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://wikiworkshop.org" data-count="none" data-hashtags="WikiWorkshop2017" data-dnt="true">Tweet</a>
+            <a href="https://twitter.com/wikiworkshop" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @wikiworkshop</a>
+          </div>
+        </div>
+        <ul class="nav nav-list bs-docs-sidenav">
+          <li><a href="#news"><i class="icon-chevron-right"></i> News</a></li>
+          <li><a href="#schedule"><i class="icon-chevron-right"></i> Schedule</a></li>
+          <li><a href="#speakers"><i class="icon-chevron-right"></i> Invited speakers</a></li>
+          <li><a href="#papers"><i class="icon-chevron-right"></i> Accepted papers</a></li>
+          <li><a href="#dates"><i class="icon-chevron-right"></i> Key dates</a></li>
+          <li><a href="#call"><i class="icon-chevron-right"></i> Call for contributions</a></li>
+          <li><a href="#submission"><i class="icon-chevron-right"></i> Submission instructions</a></li>
+          <li><a href="#previous"><i class="icon-chevron-right"></i> Previous editions</a></li>
+          <li><a href="#organization"><i class="icon-chevron-right"></i> Organization</a></li>
+          <li><a href="#contact"><i class="icon-chevron-right"></i> Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="span9">
+
+        <!-- News
+        ================================================== -->
+        <section id="news">
+          <div class="page-header">
+            <h1>News</h1>
+          </div>
+          <ul>
+            <li>Apr. 16, 2017: PDFs of accepted papers now available (see below)</li>
+            <li>Apr. 11, 2017: The workshop was a great success! <a href="img/wikiworkshop_2017_group_photo.jpg">Here's a group photo</a> (thanks to Ricardo Baeza-Yates for remembering to take one!).</li>
+            <li>Mar. 26, 2017: Tentative schedule posted</li>
+            <li>Mar. 26, 2017: Happy to announce Marius Pa&#x219;ca from Google as a keynote speaker!</li>
+            <li>Jan. 24, 2017: In response to multiple requests, the <b style="color:red">first paper submission deadline has been extended to Tuesday, January 31, 2017</b> (see below for more details).</li>
+            <li>Jan. 19, 2017: Paper submission site now open</li>
+            <li>Jan. 18, 2017: First invited speakers announced&mdash;stay tuned for more!</li>
+            <li>Dec. 15, 2016: Wiki Workshop 2017 webpage online.</li>
+          </ul>
+        </section>
+
+        <!-- Schedule
+        ================================================== -->
+        <section id="schedule">
+          <div class="page-header">
+            <h1>Schedule</h1>
+          </div>
+          <!--p>This schedule is tentative and subject to change.</p-->
+          <p>The workshop takes place in Meeting Room 8. <b>(Please note that this is different from the room listed in the conference program!)</b></p>
+          <table class="table table-nonfluid">
+            <tbody>
+              <tr><td>9:00&nbsp;-&nbsp;9:15</td><td>Welcome</td></tr>
+              <tr><td>9:15&nbsp;-&nbsp;9:45</td><td>"How much does a polar bear weigh?"</td></tr>
+              <tr><td>9:45&nbsp;-&nbsp;10:30</td><td>Invited talk: Marius Pa&#x219;ca: <i>Classes for the Masses</i></td></tr>
+              <tr><td>10:30&nbsp;-&nbsp;11:00</td><td>Morning tea*</td></tr>
+              <tr><td>11:00&nbsp;-&nbsp;11:45</td><td>Invited talk: Ben Hachey: <i>Knowledge Base Jumping: From Entity Linking to Interactive Intelligence</i></td></tr>
+              <tr><td>11:45&nbsp;-&nbsp;12:30</td><td>Invited talk: Ricardo Baeza-Yates: <i>The Vicious Cycle of Bias on the Web</i></td></tr>
+              <tr><td>12:30&nbsp;-&nbsp;13:30</td><td>Lunch*</td></tr>
+              <tr><td>13:30&nbsp;-&nbsp;14:00</td><td>Poster spotlight presentations</td></tr>
+              <tr><td>14:00&nbsp;-&nbsp;15:30</td><td>Poster session (incl. afternoon tea* from 15:00&nbsp;-&nbsp;15:30)</td></tr>
+              <tr><td>15:30&nbsp;-&nbsp;16:15</td><td>Invited talk: Cristian Danescu-Niculescu-Mizil: <i>Conversational Markers of Social Dynamics</i></td></tr>
+              <tr><td>16:15&nbsp;-&nbsp;16:55</td><td>Invited talk: Leila Zia</td></tr>
+              <tr><td>16:55&nbsp;-&nbsp;17:00</td><td>Closing remarks</td></tr>
+            </tbody>
+          </table>
+          <p>* Tea breaks and lunches will be served in the exhibition hall located in Pavilion 1.</p>
+        </section>
+
+        <!-- Speakers
+        ================================================== -->
+        <section id="speakers">
+          <div class="page-header">
+            <h1>Invited speakers</h1>
+          </div>
+          <p>(More speakers to be announced soon&mdash;stay tuned!)</p>
+          <div class="row-fluid">
+            <div class="span12">
+              <h3><a href="https://users.dcc.uchile.cl/~rbaeza/">Ricardo Baeza-Yates</a> (NTENT)</h3>
+              <p>
+                <img src="img/baezayates.jpg" class="pull-left gap-right img-rounded" width="120"/>
+                <div class="talk-title">The Vicious Cycle of Bias on the Web</div>
+                The Web is the most powerful communication medium and the largest public data repository that humankind has created. Its content ranges from great reference sources such as Wikipedia to ugly fake news. Indeed, social (digital) media is just an amplifying mirror of ourselves. Hence, the main challenge of search engines and other websites that rely on web data is to assess the quality of such data. However, as all people has their own biases, web content as well as our web interactions are tainted with many biases. Data bias includes redundancy and spam, while interaction bias includes activity and presentation bias. In addition, sometimes algorithms add bias, particularly in the context of search and recommendation systems. As bias generates bias, we stress the importance of debiasing data as well as using the context and other techniques such as explore &amp; exploit, to break the filter bubble. The main goal of this talk is to make people aware of the different biases that affect all of us on the Web. Awareness is the first step to be able to fight and reduce the vicious cycle of bias on the Web.
+              </p>
+              <div class="panel-heading" role="tab" id="heading-baezayates">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse-baezayates" aria-expanded="true" aria-controls="collapse-baezayates">
+                    Bio
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse-baezayates" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-baezayates">
+                Ricardo's areas of expertise are web search and data mining,
+information retrieval, data science and algorithms. Since June 2016,
+he has been CTO of NTENT, a semantic search technology company based in 
+California, USA. Before he was VP of Research at Yahoo Labs, based in Barcelona, Spain, and later in Sunnyvale,
+California, from January 2006 to February 2016. He also is part time Professor at
+DTIC of the Universitat Pompeu Fabra, in Barcelona, Spain, as well as at DCC of
+Universidad de Chile in Santiago. Until 2004 he was Professor and founding director
+of the Center for Web Research at the later place. He obtained a Ph.D. in CS from
+the University of Waterloo, Canada, in 1989. He is co-author of the best-seller
+Modern Information Retrieval textbook published by Addison-Wesley in 2011 (2nd ed),
+that won the ASIST 2012 Book of the Year award. From 2002 to 2004 he was elected to
+the Board of Governors of the IEEE Computer Society and between 2012 and 2016 was elected for the ACM Council. Since 2010 is a founding member of the Chilean Academy of Engineering. In 2009 he was named ACM Fellow and in 2011 IEEE Fellow, among other awards and distinctions.
+              </div>
+            </div>
+          </div>
+
+          <div class="row-fluid">
+            <div class="span12">
+              <h3><a href="http://www.cs.cornell.edu/~cristian/">Cristian Danescu-Niculescu-Mizil</a> (Cornell University)</h3>
+              <p>
+                <img src="img/cdnm.jpg" class="pull-left gap-right img-rounded" width="120"/>
+                <div class="talk-title">Conversational Markers of Social Dynamics</div>
+                Can conversational dynamics&mdash;the nature of the back and forth between people&mdash;predict the outcomes of social interactions?  In this talk I will introduce a computational framework for modeling conversational dynamics and for extracting the social signals they encode, and apply it in a variety of different settings.  First, I will show how these signals can be predictive of the future evolution of a dyadic relationship. In particular, I will characterize friendships that are unlikely to last and examine temporal patterns that foretell betrayal in the context of the Diplomacy strategy game.  Second, I will discuss conversational patterns that emerge in problem-solving group discussions, and show how these patterns can be indicative of how (in)effective the collaboration is.  I will conclude by focusing on the effects of under and over-confidence on the dynamics and outcomes of decision-making discussions.
+                <br/>
+                (This talk includes joint work with Jordan Boyd-Graber, Liye Fu, Ravi Kumar, Srijan Kumar, Lillian Lee, Vlad Niculae, Sujith Ravi, and Justine Zhang.)
+              </p>
+              <div class="panel-heading" role="tab" id="heading-danescu">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse-danescu" aria-expanded="true" aria-controls="collapse-danescu">
+                    Bio
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse-danescu" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-danescu">
+                Cristian is an assistant professor in the information science department at Cornell University.  His research aims at developing computational frameworks that can lead to a better understanding of human social behavior, by unlocking the unprecedented potential of the large amounts of natural language data generated online.   He is the recipient of several awards (including the WWW 2013 Best Paper Award, a CSCW 2017 Best Paper Award, and a Google Faculty Research Award), and his work has been featured in popular-media outlets such as the Wall Street Journal, NBC's The Today Show, NPR and the New York Times.
+              </div>
+            </div>
+          </div>
+
+          <div class="row-fluid">
+            <div class="span12">
+              <h3><a href="https://research.google.com/pubs/author107.html">Marius Pa&#x219;ca</a> (Google)</h3>
+              <p>
+                <img src="img/pasca.png" class="pull-left gap-right img-rounded" width="120"/>
+                <div class="talk-title">Classes for the Masses</div>
+                Instances ("Google") and their more specific ("technology company")
+and more general ("company", "business") classes are building blocks
+of large-scale taxonomies, which in turn are the backbone of knowledge
+repositories whether created manually or extracted from text. Data
+available within Wikipedia makes it an intriguing resource towards
+distinguishing, understanding and populating open-domain, fine-grained
+classes relevant to knowledge acquisition and Web search.
+              </p>
+              <div class="panel-heading" role="tab" id="heading-pasca">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse-pasca" aria-expanded="true" aria-controls="collapse-pasca">
+                    Bio
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse-pasca" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-pasca">
+                Marius is a research scientist at Google in Mountain View,
+                California. He graduated with a Ph.D. degree in Computer Science from
+                Southern Methodist University, Dallas, Texas, and an M.Sc. degree in
+                Computer Science from Joseph Fourier University, Grenoble, France. He
+                is the author of the book "Open-domain question answering from large
+                text collections". He served as area co-chair of HTL-06, CIKM-08,
+                EMNLP-09, ACL-14 and EMNLP-14 and program co-chair of EMNLP-12.
+                Current research interests include factual information extraction from
+                unstructured text within documents and queries, with applications in
+                Web search.
+              </div>
+            </div>
+          </div>
+
+          <div class="row-fluid">
+            <div class="span12">
+              <h3><a href="http://benhachey.info">Ben Hachey</a> (University of Sydney)</h3>
+              <p>
+                <img src="img/hachey.jpg" class="pull-left gap-right img-rounded" width="120"/>
+                <div class="talk-title">Knowledge Base Jumping: From Entity Linking to Interactive Intelligence</div>
+                Wikipedia is an unprecedented encyclopaedic resource and a model for large-scale knowledge management. It provides core data for modern knowledge systems like search contextualisation and text linking. And it points the way for other endeavours that seek to solicit and coordinate the collective knowledge of many users. In this talk, I will review learnings from nearly ten years of applying Wiki principles in research and commercial projects, e.g., strategies for applications that require entities or knowledge beyond Wikipedia. And I will discuss new models that are helping us move beyond collective knowledge towards interactive intelligence.
+              </p>
+              <div class="panel-heading" role="tab" id="heading-hachey">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse-hachey" aria-expanded="true" aria-controls="collapse-hachey">
+                    Bio
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse-hachey" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-hachey">
+                Ben is a data science professional of 15+ years, with key expertise product-driven and user-centric artificial intelligence, computational linguistics, interactive machine learning, and information integration. Until recently, he led the data science team at Hugo.ai building an interactive session search platform for finding and summarising people's online profiles. Ben supervises PhD and Honours students at the University of Sydney where was previously a DECRA Research Fellow and developed the Master of Data Science. Research focus areas have included active learning for named entity recognition, large-scale entity linking, collaborative knowledge management, wide-scope relation and attribute extraction, and fact-driven text generation.
+              </div>
+            </div>
+          </div>
+
+          <div class="row-fluid">
+            <div class="span12">
+              <h3><a href="https://research.google.com/pubs/author107.html">Leila Zia</a> (Wikimedia Foundation)</h3>
+              <p>
+                <img src="img/zia.jpg" class="pull-left gap-right img-rounded" width="120"/>
+                <!--
+                <div class="talk-title"></div>
+                -->
+                Title and abstract to be announced soon.
+              </p>
+              <div class="panel-heading" role="tab" id="heading-zia">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse-zia" aria-expanded="true" aria-controls="collapse-pasca">
+                    Bio
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse-zia" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-pasca">
+                Leila Zia is a Senior Research Scientist at the Wikimedia Foundation. Her research interests include quantifying and addressing the gaps of knowledge in Wikipedia and Wikidata, understanding Wikipedia's readers, and studying the contributor diversity on Wikimedia projects. She received her PhD from Stanford University in Management Science and Engineering.
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- Papers
+        ================================================== -->
+        <section id="papers">
+          <div class="page-header">
+            <h1>Accepted papers</h1>
+          </div>
+
+<div class="authors">Yashaswi Pochampally and Kamalakar Karlapalem</div>
+Notability Determination for Wikipedia
+[<a href="papers/p1641-pochampally.pdf">PDF</a>]
+
+<div class="authors">Thomas Arnold, Johannes Daxenberger, Iryna Gurevych and Karsten Weihe</div>
+Is Interaction More Important Than Individual Performance? A Study of Motifs in Wikia
+[<a href="papers/p1609-arnold.pdf">PDF</a>]
+
+<div class="authors">Erik Dahm, Moritz Schubotz, Norman Meuschke and Bela Gipp</div>
+Performing Social and Economic Data Analysis Using Wikipedia's Edit History
+[<a href="papers/p1627-dahm.pdf">PDF</a>]
+
+<div class="authors">Reed Harder, Alfredo Velasco, Michael Evans, Chuankai An and Daniel Rockmore</div>
+Wikipedia Verification Check: A Chrome Browser Extension
+[<a href="papers/p1619-harder.pdf">PDF</a>]
+
+<div class="authors">Ester Pantaleo, Tommaso Di Noia and Vito Walter Anelli</div>
+Etytree: A Graphical and Interactive Etymology Dictionary Based on Wiktionary
+[<a href="papers/p1635-pantaleo.pdf">PDF</a>]
+
+<div class="authors">Amir Sarabadani, Aaron Halfaker and Dario Taraborelli</div>
+Building Automated Vandalism Detection Tool for Wikidata
+[<a href="papers/p1647-sarabadani.pdf">PDF</a>]
+
+<div class="authors">Nemanja Spasojevic, Preeti Bhargava and Guoning Hu</div>
+DAWT: Densely Annotated Wikipedia Texts across Multiple Languages
+[<a href="papers/p1655-spasojevic.pdf">PDF</a>]
+
+<div class="authors">Kai Zhu, Lev Muchnik and Dylan Walker</div>
+Content Growth in Wikipedia: A Large-Scale Natural Experiment
+
+<div class="authors">Michele Tizzoni, André Panisson, Daniela Paolotti and Ciro Cattuto</div>
+Attention Patterns during Public Health Emergencies from Wikipedia Page View Data: Case Study for the 2015-2016 Zika Virus Epidemic
+
+<div class="authors">Feng Shi, Misha Teplitskiy and Eamon Duede</div>
+Wisdom of Politically Polarized Crowds
+
+        </section>
+
+        <!-- Dates
+        ================================================== -->
+        <section id="dates">
+          <div class="page-header">
+            <h1>Key dates</h1>
+          </div>
+          <p>Workshop date: April 4, 2017</p>
+          <p><b>If authors want paper to appear in proceedings:</b></p>
+          <ul>
+            <li>Submission deadline: <s>January 24, 2017</s> <b style="color:red">January 31, 2017 (end of day anywhere on Earth)</b></li>
+            <li>Author feedback: February 7, 2017</li>
+            <li>Camera-ready version due: <s>February 14, 2017</s> <b style="color:red">February 23, 2017</b> (<a href="http://www.sheridanprinting.com/typedept/www2.htm">instructions here</a>)</li>
+          </ul>
+          <p><b>If authors <i>do not</i> want paper to appear in proceedings:</b></p>
+          <ul>
+            <li>Submission deadline: February 26, 2017</li>
+            <li>Author feedback: March 7, 2017</li>
+          </ul>
+
+        </section>
+
+        <!-- Call for contributions
+        ================================================== -->
+        <section id="call">
+          <div class="page-header">
+            <h1>Call for contributions</h1>
+          </div>
+          <p>
+          Wikipedia is one of the most popular sites on the Web, a main source of knowledge for
+          a large fraction of Internet users, and one of the very few projects that make not only their
+          content but also many activity logs available to the public. Furthermore, other Wikimedia projects,
+          such as Wikidata and Wikimedia Commons, have been created to share other types of
+          knowledge with the world for free. For a variety of reasons (quality and quantity of content,
+          reach in many languages, process of content production, availability of data, etc.) such projects
+          have become important objects of study for researchers across many subfields of the computational
+          and social sciences, such as social network analysis, artificial intelligence, linguistics,
+          natural language processing, social psychology, education, anthropology, political science,
+          human&ndash;computer interaction, and cognitive science.
+          </p>
+          <p>
+          The goal of this workshop
+          is to bring together researchers exploring all aspects of Wikimedia websites such as Wikipedia,
+          Wikidata, and Commons. With members of the Wikimedia Foundation's Research team on the
+          organizing committee and with the experience of successful
+          workshops in <a href="http://wikiworkshop.org/2015/">2015</a> and <a href="http://wikiworkshop.org/2016/">2016</a>, we aim to
+          continue facilitating a direct pathway for exchanging ideas between the organization that
+          operates Wikimedia websites and the researchers interested in studying them.
+          </p>
+          <p>Topics of interest include, but are not limited to</p>
+          <ul>
+            <li>new technologies and initiatives to grow content, quality, diversity, and participation across Wikimedia projects</li>
+            <li> use of bots, algorithms, and crowdsourcing strategies to curate, source, or verify content and structured data</li>
+            <li> bias in content and gaps of knowledge</li>
+            <li> diversity of Wikimedia editors and users</li>
+            <li> understanding editor motivations, engagement models, and incentives</li>
+            <li> Wikimedia consumer motivations and their needs: readers, researchers, tool/API developers</li>
+            <li> innovative uses of Wikipedia and other Wikimedia projects for AI and NLP applications</li>
+            <li> consensus-finding and conflict resolution on editorial issues</li>
+            <li> participation in discussions and their dynamics</li>
+            <li> dynamics of content reuse across projects and the impact of policies and community norms on reuse</li>
+            <li> privacy</li>
+            <li> collaborative content creation (unstructured, semi-structured, or structured)</li>
+            <li> collaborative task management</li>
+            <li> innovative uses of Wikimedia projects' content and consumption patterns as sensors for real-world events, culture, etc.</li>
+          </ul>
+          <p>Papers should be 1 to 8 pages long and will be published on the workshop webpage and optionally
+            (depending on the authors' choice) in the workshop proceedings.
+            Authors whose papers are accepted to the workshop will have the opportunity to participate in a poster session.
+            <!--They are welcome to present their poster at both instances of the workshop (at WWW and ICWSM)
+            if it was accepted to one of them.--></p>
+
+          <p style="font-weight:bold">We explicitly encourage the submission of preliminary work in the form of extended abstracts (1 or 2 pages).</p>
+        </section>
+
+        <!-- Submission instructions
+        ================================================== -->
+        <section id="submission">
+          <div class="page-header">
+            <h1>Submission instructions</h1>
+          </div>
+
+          <p>Papers should be 1 to 8 pages long. We explicitly encourage the submission of
+            preliminary work in the form of extended abstracts (1 or 2 pages). No need to anonymize your submissions.</p>
+          <p>For submission dates, see above.</p>
+
+          <ul>
+            <li>Format: <a href="http://www.acm.org/publications/article-templates/proceedings-template.html">ACM SIG proceedings template</a></li>
+            <li>Submission site:
+              <a href="https://easychair.org/conferences/?conf=wikiworkshop2017">https://easychair.org/conferences/?conf=wikiworkshop2017</a>
+            </li>
+          </ul>
+
+        </section>
+
+        <!-- Previous editions
+        ================================================== -->
+        <section id="previous">
+          <div class="page-header">
+            <h1>Previous editions</h1>
+          </div>
+          <ul>
+            <li><a href="http://snap.stanford.edu/wiki-icwsm15/">@ ICWSM 2015</a></li>
+            <li><a href="http://snap.stanford.edu/wikiworkshop2016/">@ WWW 2016 and ICWSM 2016</a></li>
+          </ul>
+
+        <!-- Organization
+        ================================================== -->
+        <section id="organization">
+          <div class="page-header">
+            <h1>Organization</h1>
+          </div>
+          <div class="row-fluid">
+            <div class="span6">
+              <h3><a href="http://infolab.stanford.edu/~west1/">Robert West</a></h3>
+              <p>Bob is an assistant professor of Computer Science at EPFL. His research aims to understand, predict, and enhance human behavior in social and information networks by developing techniques in data science, data mining, network analysis, machine learning, and natural language processing. He holds a PhD in computer science from Stanford University.</p>
+            </div>
+            <div class="span6">
+              <h3><a href="https://www.mediawiki.org/wiki/User:LZia_(WMF)">Leila Zia</a></h3>
+              <p>Leila is a senior research scientist at the Wikimedia Foundation. Her current research interests are on understanding Wikipedia's readers, quantifying and addressing the gaps of knowledge in Wikipedia and Wikidata, and understanding and improving diversity in Wikipedia. She holds a PhD in management science and engineering from Stanford University.</p>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="span6">
+              <h3><a href="https://en.wikipedia.org/wiki/User:DarTar">Dario Taraborelli</a></h3>
+              <p>Dario is a social computing researcher and the Wikimedia Foundation's Head of Research. His current interests focus on online collaboration, open science, and the measurement and discoverability of scientific knowledge. He holds a PhD in cognitive science from the &Eacute;cole des Hautes &Eacute;tudes en Sciences Sociales.</p>
+            </div>
+            <div class="span6">
+              <h3><a href="http://cs.stanford.edu/people/jure/">Jure Leskovec</a></h3>
+              <p>Jure is an associate professor of Computer Science at Stanford University. His research focuses on mining and modeling large social and information networks, their evolution, and diffusion of information and influence over them. Problems he investigates are motivated by large scale data, the Web and online media.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact
+        ================================================== -->
+        <section id="contact">
+          <div class="page-header">
+            <h1>Contact</h1>
+          </div>
+          <p>Please direct your questions to wikiworkshop<script type="text/javascript">document.write('@')</script>googlegroups<script type="text/javascript">document.write('.')</script>com.</p>
+        </section>
+
+      </div>
+
+    </div>
+
+    </div> <!-- /container -->
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+      </div>
+    </footer>
+
+<!-- Start tweet button -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<script type="text/javascript">
+  // Source: http://pixabay.com/en/reptile-chameleon-yemen-pets-316735/
+  $.backstretch("img/background2.jpg");
+  // Fix from http://stackoverflow.com/questions/19027749/how-to-disable-slider-in-bootstrap-slider-js,
+  // so sliders can be disabled.
+  $.fn.slider.Constructor.prototype.disable = function () {
+    this.picker.off();
+  }
+  $.fn.slider.Constructor.prototype.enable = function () {
+    if (this.touchCapable) {
+      // Touch: Bind touch events:
+      this.picker.on({
+        touchstart: $.proxy(this.mousedown, this)
+      });
+    } else {
+      this.picker.on({
+        mousedown: $.proxy(this.mousedown, this)
+      });
+    }
+  }
+</script>
+<!-- End tweet button -->
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11195272; 
+var sc_invisible=1; 
+var sc_security="aa90b74f"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11195272/0/aa90b74f/1/" alt="web
+analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<script src="bootstrap/assets/js/jquery.js"></script>
+<script src="bootstrap/assets/js/bootstrap-transition.js"></script>
+<script src="bootstrap/assets/js/bootstrap-alert.js"></script>
+<script src="bootstrap/assets/js/bootstrap-modal.js"></script>
+<script src="bootstrap/assets/js/bootstrap-dropdown.js"></script>
+<script src="bootstrap/assets/js/bootstrap-scrollspy.js"></script>
+<script src="bootstrap/assets/js/bootstrap-tab.js"></script>
+<script src="bootstrap/assets/js/bootstrap-tooltip.js"></script>
+<script src="bootstrap/assets/js/bootstrap-popover.js"></script>
+<script src="bootstrap/assets/js/bootstrap-button.js"></script>
+<script src="bootstrap/assets/js/bootstrap-collapse.js"></script>
+<script src="bootstrap/assets/js/bootstrap-carousel.js"></script>
+<script src="bootstrap/assets/js/bootstrap-typeahead.js"></script>
+<script src="bootstrap/assets/js/bootstrap-affix.js"></script>
+
+<script src="bootstrap/assets/js/holder.js"></script>
+<script src="bootstrap/assets/js/prettify.js"></script>
+
+<script src="bootstrap/assets/js/application.js"></script>
+
+<!--script src="bootstrap/js/bootstrap.min.js"></script-->
+</body>
+</html>
