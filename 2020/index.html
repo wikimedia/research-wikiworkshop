@@ -18,17 +18,17 @@
 .talk-title { font-weight:bold; margin-bottom:3mm; }
 .table-nonfluid { width: auto !important; }
 .myjumbotron {
-  background: #264d00; /* Old browsers */
-  background: -moz-linear-gradient(45deg,  #000000 0%, #777777 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#000000), color-stop(100%,#777777)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(45deg,  #000000 0%,#777777 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(45deg,  #000000 0%,#777777 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(45deg,  #000000 0%,#777777 100%); /* IE10+ */
-  background: linear-gradient(45deg,  #264d00 0%,#66cc00 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.0), inset 0 -3px 7px rgba(0,0,0,.0);
-     -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.0), inset 0 -3px 7px rgba(0,0,0,.0);
-          box-shadow: inset 0 3px 7px rgba(0,0,0,.0), inset 0 -3px 7px rgba(0,0,0,.0);
+    background: #264d00; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #000000 0%, #777777 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#000000), color-stop(100%,#777777)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg,  #000000 0%,#777777 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg,  #000000 0%,#777777 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg,  #000000 0%,#777777 100%); /* IE10+ */
+    background: linear-gradient(45deg,  #264d00 0%,#66cc00 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.0), inset 0 -3px 7px rgba(0,0,0,.0);
+    -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.0), inset 0 -3px 7px rgba(0,0,0,.0);
+    box-shadow: inset 0 3px 7px rgba(0,0,0,.0), inset 0 -3px 7px rgba(0,0,0,.0);
 }
 .nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus {
     color: #fff;
@@ -36,8 +36,25 @@
     background-color: #408000;
 }
 a {
-  color: #408000;
+    color: #408000;
 }
+a.cta-button {
+    border-radius: 2px;
+    border: solid 1px #3366cc;
+    background-color: #3366cc;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    margin-top: 10px;
+    text-align: center;
+    color: #ffffff;
+    padding: 8px 10px;
+}
+
 </style>
 
 </head>
@@ -101,7 +118,9 @@ a {
             <!--div class="fb-like" data-href="https://wikiworkshop.org" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
             <br/>
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://wikiworkshop.org" data-count="none" data-hashtags="WikiWorkshop2020" data-dnt="true">Tweet</a-->
-            <a href="https://twitter.com/wikiworkshop" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @wikiworkshop</a>
+              <a href="https://twitter.com/wikiworkshop" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @wikiworkshop</a>
+              <br />
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2ctfYVIokWYsvUfxcdF-FNwrymgzpNZLh25EhU8JbvKp1tA/viewform" class="cta-button">Register for Wiki Workshop 2020!</a>
           </div>
         </div>
         <ul class="nav nav-list bs-docs-sidenav">
@@ -136,6 +155,7 @@ a {
             <li>Apr. 4, 2019: Workshop schedule announced.</li>
             <li>Feb. 6, 2019: Denny Vrandečić confirmed as invited speaker.</li>
             <li>Feb. 6, 2019: Erica Kochi confirmed as invited speaker.</li-->
+            <li>Apr. 16, 2020: Register for Wiki Workshop 2020 <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2ctfYVIokWYsvUfxcdF-FNwrymgzpNZLh25EhU8JbvKp1tA/viewform">here</a>.</li>
             <li>Feb. 11, 2020: Benjamin Mako Hill (University of Washington) confirmed as invited speaker.</li>
             <li>Jan. 30, 2020: Misha Teplitskiy (University of Michigan) confirmed as invited speaker.</li>
             <li>Jan. 30, 2020: Kristina Lerman (USC ISI) confirmed as invited speaker.</li>
@@ -149,24 +169,24 @@ a {
         ================================================== -->
         <section id="schedule">
           <div class="page-header">
-            <h1>Schedule</h1>
+              <h1>Schedule</h1>
           </div>
-          <p>We will have a series of invited talks by academia and industry experts, as well as a combination of lightning talks and a poster session for the accepted papers.</p>
-          <p>Details to be determined.</p>
-          <p><b>All times are UTC!</b> That is, the start time is 5:00am PST, 15:00 CEST, etc.</p>
+          <!-- <p>We will have a series of invited talks by academia and industry experts, as well as a combination of lightning talks and a poster session for the accepted papers.</p> -->
+          <!-- <p>Details to be determined.</p> -->
+          <p><b>All times are UTC!</b> That is, the start time is 5:00am PST, 14:00 CEST, etc.</p>
           <table class="table table-nonfluid">
-            <tbody>
-              <tr><td>13:00-13:20</td><td>Introductions</td></tr>
-              <tr><td>13:20-14:05</td><td>Keynote (TBD)</td></tr>
-              <tr><td>14:05-14:15</td><td>Creative time!</td></tr>
-              <tr><td>14:15-15:00</td><td>A conversation with Mark Graham</td></tr>
-              <tr><td>15:00-15:05</td><td>More creative time!</td></tr>
-              <tr><td>15:05-15:50</td><td>A conversation with Misha Teplitskiy and Kristina Lerman</td></tr>
-              <tr><td>15:50-16:00</td><td>Break</td></tr>
-              <tr><td>16:00-17:15</td><td>Featured talks and lightning talks</td></tr>
-              <tr><td>17:15-18:00</td><td>Virtual posters: thematic meetings in breakout rooms</td></tr>
-              <tr><td>18:00-18:05</td><td>Conclusing remarks</td></tr>
-              <tr><td>18:05-19:30</td><td>Appendix: one-on-one meetings</td></tr>
+              <tbody>
+                  <tr><td>12:00-12:20</td><td>Introductions</td></tr>
+                  <tr><td>12:20-13:05</td><td>Keynote (TBD)</td></tr>
+                  <tr><td>13:05-13:15</td><td>Creative time!</td></tr>
+                  <tr><td>13:15-14:00</td><td>A conversation with Mark Graham</td></tr>
+                  <tr><td>14:00-14:05</td><td>More creative time!</td></tr>
+                  <tr><td>14:05-14:50</td><td>A conversation with Misha Teplitskiy and Kristina Lerman</td></tr>
+                  <tr><td>14:50-15:00</td><td>Break</td></tr>
+                  <tr><td>15:00-16:15</td><td>Featured talks and lightning talks</td></tr>
+                  <tr><td>16:15-17:00</td><td>Virtual posters: thematic meetings in breakout rooms</td></tr>
+                  <tr><td>17:00-17:05</td><td>Conclusing remarks</td></tr>
+                  <tr><td>17:05-18:30</td><td>Appendix: one-on-one meetings</td></tr>
             </tbody>
           </table>
         </section>
