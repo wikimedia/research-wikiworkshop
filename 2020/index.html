@@ -1,600 +1,588 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wiki Workshop 2020</title>
-<meta description="Wiki Workshop 2020" />
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wiki Workshop 2020</title>
+        <meta description="Wiki Workshop 2020" />
 
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="bootstrap/assets/css/docs.css" rel="stylesheet">
-<link href="bootstrap/assets/css/prettify.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="bootstrap/assets/css/docs.css" rel="stylesheet">
+        <link href="bootstrap/assets/css/prettify.css" rel="stylesheet">
 
-<style>
-.gap-right { margin-right:5px; }
-.gap-left { margin-left:5px; }
-.authors { font-weight:bold; margin-top:3mm; }
-.talk-title { font-weight:bold; margin-bottom:3mm; }
-.table-nonfluid { width: auto !important; }
-.myjumbotron {
-    background: #264d00; /* Old browsers */
-    background: -moz-linear-gradient(45deg,  #000000 0%, #777777 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#000000), color-stop(100%,#777777)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(45deg,  #000000 0%,#777777 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(45deg,  #000000 0%,#777777 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(45deg,  #000000 0%,#777777 100%); /* IE10+ */
-    background: linear-gradient(45deg,  #264d00 0%,#66cc00 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.0), inset 0 -3px 7px rgba(0,0,0,.0);
-    -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.0), inset 0 -3px 7px rgba(0,0,0,.0);
-    box-shadow: inset 0 3px 7px rgba(0,0,0,.0), inset 0 -3px 7px rgba(0,0,0,.0);
-}
-.nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus {
-    color: #fff;
-    text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
-    background-color: #408000;
-}
-a {
-    color: #408000;
-}
-a.cta-button {
-    border-radius: 2px;
-    border: solid 1px #3366cc;
-    background-color: #3366cc;
-    display: block;
-    font-size: 13px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 0.2px;
-    margin-top: 10px;
-    text-align: center;
-    color: #ffffff;
-    padding: 8px 10px;
-}
+        <style>
+        .gap-right { margin-right:5px; }
+        .gap-left { margin-left:5px; }
+        .authors { font-weight:bold; margin-top:3mm; }
+        .talk-title { font-weight:bold; margin-bottom:3mm; }
+        .table-nonfluid { width: auto !important; }
+        .myjumbotron {
+            background: #264d00; /* Old browsers */
+            background: -moz-linear-gradient(45deg,  #000000 0%, #777777 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#000000), color-stop(100%,#777777)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(45deg,  #000000 0%,#777777 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(45deg,  #000000 0%,#777777 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(45deg,  #000000 0%,#777777 100%); /* IE10+ */
+            background: linear-gradient(45deg,  #264d00 0%,#66cc00 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.0), inset 0 -3px 7px rgba(0,0,0,.0);
+            -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.0), inset 0 -3px 7px rgba(0,0,0,.0);
+            box-shadow: inset 0 3px 7px rgba(0,0,0,.0), inset 0 -3px 7px rgba(0,0,0,.0);
+        }
+        .nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus {
+            color: #fff;
+            text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+            background-color: #408000;
+        }
+        a {
+            color: #408000;
+        }
+        a.cta-button {
+            border-radius: 2px;
+            border: solid 1px #3366cc;
+            background-color: #3366cc;
+            display: block;
+            font-size: 13px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.2px;
+            margin-top: 10px;
+            text-align: center;
+            color: #ffffff;
+            padding: 8px 10px;
+        }
 
-</style>
+        </style>
 
-</head>
+    </head>
 
-<body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <body data-spy="scroll" data-target=".bs-docs-sidebar">
 
-  <!-- Start Facebook button -->
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-  <!-- End Facebook button -->
+        <!-- Start Facebook button -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <!-- End Facebook button -->
 
-  <!-- Navbar
-  ================================================== -->
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <!--a class="brand" href="./index.html">Bootstrap</a-->
-        <div class="nav-collapse collapse">
-          <ul class="nav">
-            <li class="">
-              <a href=""><b>Wiki Workshop 2020</b></a>
-            </li>
-          </ul>
+        <!-- Navbar
+             ================================================== -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--a class="brand" href="./index.html">Bootstrap</a-->
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="">
+                                <a href=""><b>Wiki Workshop 2020</b></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-<!--
--->
+        <!--
+        -->
 
-  <!-- Subhead
-  ================================================== -->
-  <header class="jumbotron subhead myjumbotron" id="overview">
-    <div class="container">
-      <h1>Wiki Workshop 2020</h1>
-      <p class="lead">
-        A forum bringing together researchers exploring all aspects of Wikipedia, Wikidata, and other Wikimedia projects.
-        Held at <a href="https://www2020.thewebconf.org/">The&nbsp;Web&nbsp;Conference&nbsp;2020</a> in Taipei, Taiwan, 21 April&nbsp;2020.
-      </p>
-    </div>
-  </header>
-
-  <div class="container">
-
-    <div class="row">
-      <div class="span3 bs-docs-sidebar">
-        <div class="row-fluid" style="margin-top:1em">
-          <div class="span12" style="text-align:center">
-            <!--div class="fb-like" data-href="https://wikiworkshop.org" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
-            <br/>
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://wikiworkshop.org" data-count="none" data-hashtags="WikiWorkshop2020" data-dnt="true">Tweet</a-->
-              <a href="https://twitter.com/wikiworkshop" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @wikiworkshop</a>
-              <br />
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2ctfYVIokWYsvUfxcdF-FNwrymgzpNZLh25EhU8JbvKp1tA/viewform" class="cta-button">Register for Wiki Workshop 2020!</a>
-          </div>
-        </div>
-        <ul class="nav nav-list bs-docs-sidenav">
-          <li><a href="#news"><i class="icon-chevron-right"></i> News</a></li>
-          <li><a href="#schedule"><i class="icon-chevron-right"></i> Schedule</a></li>
-          <li><a href="#speakers"><i class="icon-chevron-right"></i> Invited speakers</a></li>
-          <!--li><a href="#papers"><i class="icon-chevron-right"></i> Accepted papers</a></li-->
-          <li><a href="#dates"><i class="icon-chevron-right"></i> Key dates</a></li>
-          <li><a href="#call"><i class="icon-chevron-right"></i> Call for contributions</a></li>
-          <li><a href="#submission"><i class="icon-chevron-right"></i> Submission instructions</a></li>
-          <li><a href="#program-committee"><i class="icon-chevron-right"></i> Program committee</a></li>
-          <li><a href="#previous"><i class="icon-chevron-right"></i> Previous editions</a></li>
-          <li><a href="#organization"><i class="icon-chevron-right"></i> Organization</a></li>
-          <li><a href="#contact"><i class="icon-chevron-right"></i> Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="span9">
-
-        <!-- News
-        ================================================== -->
-        <section id="news">
-          <div class="page-header">
-            <h1>News</h1>
-          </div>
-          <ul>
-            <!--li>May 1, 2018: Speaker slides linked from this page (see respective talk abstracts below).</li>
-            <li>Apr. 25, 2018: The workshop was a big success. Thanks to all participants, speakers, and poster presenters!</li>
-            <li>Apr. 5, 2018: Keynote titles and abstracts announced.</li>
-            <li>Apr. 29, 2019: PDFs of accepted papers available.</li>
-            <li>Apr. 17, 2019: List of accepted papers announced.</li>
-            <li>Apr. 4, 2019: Workshop schedule announced.</li>
-            <li>Feb. 6, 2019: Denny Vrandečić confirmed as invited speaker.</li>
-            <li>Feb. 6, 2019: Erica Kochi confirmed as invited speaker.</li-->
-            <li>Apr. 16, 2020: Register for Wiki Workshop 2020 <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2ctfYVIokWYsvUfxcdF-FNwrymgzpNZLh25EhU8JbvKp1tA/viewform">here</a>.</li>
-            <li>Feb. 11, 2020: Benjamin Mako Hill (University of Washington) confirmed as invited speaker.</li>
-            <li>Jan. 30, 2020: Misha Teplitskiy (University of Michigan) confirmed as invited speaker.</li>
-            <li>Jan. 30, 2020: Kristina Lerman (USC ISI) confirmed as invited speaker.</li>
-            <li>Jan. 30, 2020: Mark Graham (Internet Archive) confirmed as invited speaker.</li>
-            <li>Dec. 4, 2019: Workshop date announced: Tuesday, 21 April 2020.</li>
-            <li>Nov. 15, 2019: Wiki Workshop 2020 webpage online.</li>
-          </ul>
-        </section>
-
-        <!-- Schedule
-        ================================================== -->
-        <section id="schedule">
-          <div class="page-header">
-              <h1>Schedule</h1>
-          </div>
-          <!-- <p>We will have a series of invited talks by academia and industry experts, as well as a combination of lightning talks and a poster session for the accepted papers.</p> -->
-          <!-- <p>Details to be determined.</p> -->
-          <p><b>All times are UTC!</b> That is, the start time is 5:00am PST, 14:00 CEST, etc.</p>
-          <table class="table table-nonfluid">
-              <tbody>
-                  <tr><td>12:00-12:20</td><td>Introductions</td></tr>
-                  <tr><td>12:20-13:05</td><td>Keynote (TBD)</td></tr>
-                  <tr><td>13:05-13:15</td><td>Creative time!</td></tr>
-                  <tr><td>13:15-14:00</td><td>A conversation with Mark Graham</td></tr>
-                  <tr><td>14:00-14:05</td><td>More creative time!</td></tr>
-                  <tr><td>14:05-14:50</td><td>A conversation with Misha Teplitskiy and Kristina Lerman</td></tr>
-                  <tr><td>14:50-15:00</td><td>Break</td></tr>
-                  <tr><td>15:00-16:15</td><td>Featured talks and lightning talks</td></tr>
-                  <tr><td>16:15-17:00</td><td>Virtual posters: thematic meetings in breakout rooms</td></tr>
-                  <tr><td>17:00-17:05</td><td>Conclusing remarks</td></tr>
-                  <tr><td>17:05-18:30</td><td>Appendix: one-on-one meetings</td></tr>
-            </tbody>
-          </table>
-        </section>
-
-        <!-- Speakers
-        ================================================== -->
-        <section id="speakers">
-          <div class="page-header">
-            <h1>Invited speakers</h1>
-          </div>
-          <p>More speakers to be announced soon&mdash;stay tuned!</p>
-
-          <div class="row-fluid">
-            <div class="span12">
-              <h3><a href="https://sites.google.com/view/teplitskiy">Misha Teplitskiy</a> (University of Michigan)</h3>
-              <p>
-                <img src="img/teplitskiy.jpg" class="pull-left gap-right img-rounded" width="120"/>
-                <div class="talk-title">Wisdom of Polarized Crowds</div>
-                As political polarization in the United States continues to rise, the question of whether polarized individuals can fruitfully cooperate becomes pressing. Although diverse perspectives typically lead to superior team performance on complex tasks, strong political perspectives have been associated with conflict, misinformation and a reluctance to engage with people and ideas beyond one’s echo chamber. Here, we explore the effect of ideological composition on team performance by analysing millions of edits to Wikipedia’s political, social issues and science articles. We measure editors’ online ideological preferences by how much they contribute to conservative versus liberal articles. Editor surveys suggest that online contributions associate with offline political party affiliation and ideological self-identity. Our analysis reveals that polarized teams consisting of a balanced set of ideologically diverse editors produce articles of a higher quality than homogeneous teams. The effect is most clearly seen in Wikipedia’s political articles, but also in social issues and even science articles. Analysis of article ‘talk pages’ reveals that ideologically polarized teams engage in longer, more constructive, competitive and substantively focused but linguistically diverse debates than teams of ideological moderates. More intense use of Wikipedia policies by ideologically diverse teams suggests institutional design principles to help unleash the power of polarization.
-              </p>
-              <div class="panel-heading" role="tab" id="heading-teplitskiy">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" href="#collapse-teplitskiy" aria-expanded="true" aria-controls="collapse-teplitskiy">
-                    Bio
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse-teplitskiy" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-teplitskiy">
-                Misha Teplitskiy is an Assistant Professor at the School of Information, University of Michigan. His research is at the intersection of Science of Science + Sociology of Organizations + Computational Social Science. He studies how social and organizational factors affect scientific discovery. He is especially interested in evaluation practices in science, and whether they promote or stifle innovation. My approach relies primarily on field experiments -- interventions in scientific competitions and other settings -- and applying computational tools to large-scale observational data. Previously, he was a postdoc at the Laboratory for Innovation Science at Harvard (LISH). He received his PhD in Sociology from the University of Chicago, where he was a member of KnowledgeLab.
-              </div>
+        <!-- Subhead
+             ================================================== -->
+        <header class="jumbotron subhead myjumbotron" id="overview">
+            <div class="container">
+                <h1>Wiki Workshop 2020</h1>
+                <p class="lead">
+                    A forum bringing together researchers exploring all aspects of Wikipedia, Wikidata, and other Wikimedia projects.
+                    Held at <a href="https://www2020.thewebconf.org/">The&nbsp;Web&nbsp;Conference&nbsp;2020</a> in Taipei, Taiwan, 21 April&nbsp;2020.
+                </p>
             </div>
-          </div>
+        </header>
 
-          <div class="row-fluid">
-            <div class="span12">
-              <h3><a href="https://blog.archive.org/author/mark/">Mark Graham</a> (Internet Archive)</h3>
-              <p>
-                <img src="img/graham.png" class="pull-left gap-right img-rounded" width="120"/>
-                <div class="talk-title">How the Internet Archive is helping to make the Web more useful and reliable with the Wayback Machine and projects like Weaving Books into the Web, starting with Wikipedia</div>
-                The Internet Archive is a San Francisco based non-profit dedicated to the mission of Universal Access to All Knowledge.  It is best known for the Wayback Machine, which has been archiving much of the public Web for the past 24 years.  To date more than 900 billion URLs have been archived and nearly a billion are added every day.  But the Internet Archive is engaged in many more projects to digitize analog material, and preserve and make available digital material.  In this session we will update several of those efforts, with a focus on projects aimed at helping to strengthen the global information ecosystem by adding persistent Web URLs to services, by adding links to digital books and academic papers as cited in Wikipedia articles, and to supporting research projects and services working to address the issues of mis- and disinformation.
-              </p>
-              <div class="panel-heading" role="tab" id="heading-graham">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" href="#collapse-graham" aria-expanded="true" aria-controls="collapse-graham">
-                    Bio
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse-graham" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-graham">
-                Mark Graham has created and managed innovative online products and services since 1984. As Director of the Wayback Machine he is responsible for capturing, preserving and helping people discover and use, more than 1 billion new web captures each week. Previously, Mark was Senior Vice President with NBC News, Senior Vice President of Technology with iVillage, and a co-founder of Rojo Networks. In the early days of the net he managed technology and business development at The WELL and also helped bring the pre-web Internet to millions of people by running AOL's Gopher project as part of their Internet Center. He managed technology for the pioneering US-Soviet Sovam Teleport email service and co-founded and managed PeaceNet, IGC.org, and APC.org. Mark's early training and experience with computer-mediated communications was acquired while he served in the US Air Force, spending more than 3 years working at the Air Force Data Services Center at the Pentagon.
-              </div>
+        <div class="container">
+
+            <div class="row">
+                <div class="span3 bs-docs-sidebar">
+                    <div class="row-fluid" style="margin-top:1em">
+                        <div class="span12" style="text-align:center">
+                            <!--div class="fb-like" data-href="https://wikiworkshop.org" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+                                 <br/>
+                                 <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://wikiworkshop.org" data-count="none" data-hashtags="WikiWorkshop2020" data-dnt="true">Tweet</a-->
+                            <a href="https://twitter.com/wikiworkshop" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @wikiworkshop</a>
+                            <br />
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2ctfYVIokWYsvUfxcdF-FNwrymgzpNZLh25EhU8JbvKp1tA/viewform" class="cta-button">Register for Wiki Workshop 2020!</a>
+                        </div>
+                    </div>
+                    <ul class="nav nav-list bs-docs-sidenav">
+                        <li><a href="#news"><i class="icon-chevron-right"></i> News</a></li>
+                        <li><a href="#schedule"><i class="icon-chevron-right"></i> Schedule</a></li>
+                        <li><a href="#speakers"><i class="icon-chevron-right"></i> Invited speakers</a></li>
+                        <!--li><a href="#papers"><i class="icon-chevron-right"></i> Accepted papers</a></li-->
+                        <li><a href="#dates"><i class="icon-chevron-right"></i> Key dates</a></li>
+                        <li><a href="#call"><i class="icon-chevron-right"></i> Call for contributions</a></li>
+                        <li><a href="#submission"><i class="icon-chevron-right"></i> Submission instructions</a></li>
+                        <li><a href="#program-committee"><i class="icon-chevron-right"></i> Program committee</a></li>
+                        <li><a href="#previous"><i class="icon-chevron-right"></i> Previous editions</a></li>
+                        <li><a href="#organization"><i class="icon-chevron-right"></i> Organization</a></li>
+                        <li><a href="#contact"><i class="icon-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="span9">
+
+                    <!-- News
+                         ================================================== -->
+                    <section id="news">
+                        <div class="page-header">
+                            <h1>News</h1>
+                        </div>
+                        <ul>
+                            <!--li>May 1, 2018: Speaker slides linked from this page (see respective talk abstracts below).</li>
+                                 <li>Apr. 25, 2018: The workshop was a big success. Thanks to all participants, speakers, and poster presenters!</li>
+                                 <li>Apr. 5, 2018: Keynote titles and abstracts announced.</li>
+                                 <li>Apr. 29, 2019: PDFs of accepted papers available.</li>
+                                 <li>Apr. 17, 2019: List of accepted papers announced.</li>
+                                 <li>Apr. 4, 2019: Workshop schedule announced.</li>
+                                 <li>Feb. 6, 2019: Denny Vrandečić confirmed as invited speaker.</li>
+                                 <li>Feb. 6, 2019: Erica Kochi confirmed as invited speaker.</li-->
+                            <li>April 21, 2020: Wiki Workshop day! If you have
+                                registered through the Web Conference or Wiki Workshop, check your
+                                email for instructions to join.</li>
+                            <li>Apr. 16, 2020: Register for Wiki Workshop 2020 <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2ctfYVIokWYsvUfxcdF-FNwrymgzpNZLh25EhU8JbvKp1tA/viewform">here</a>.</li>
+                            <li>Feb. 11, 2020: Benjamin Mako Hill (University of Washington) confirmed as invited speaker.</li>
+                            <li>Jan. 30, 2020: Misha Teplitskiy (University of Michigan) confirmed as invited speaker.</li>
+                            <li>Jan. 30, 2020: Kristina Lerman (USC ISI) confirmed as invited speaker.</li>
+                            <li>Jan. 30, 2020: Mark Graham (Internet Archive) confirmed as invited speaker.</li>
+                            <li>Dec. 4, 2019: Workshop date announced: Tuesday, 21 April 2020.</li>
+                            <li>Nov. 15, 2019: Wiki Workshop 2020 webpage online.</li>
+                        </ul>
+                    </section>
+
+                    <!-- Schedule
+                         ================================================== -->
+                    <section id="schedule">
+                        <div class="page-header">
+                            <h1>Schedule</h1>
+                        </div>
+                        <p>
+                            <a href="https://docs.google.com/document/d/13ec7iZ27chM6rCTr8pF_8G0x9PsPWFd4zXIxPEDtsoA/edit?ts=5e9d3ae3#heading=h.dfgxi6ouz926">Access the schedule</a> along with more details.
+                        </p>
+                    </section>
+
+                    <!-- Speakers
+                         ================================================== -->
+                    <section id="speakers">
+                        <div class="page-header">
+                            <h1>Invited speakers</h1>
+                        </div>
+                        <p>More speakers to be announced soon&mdash;stay tuned!</p>
+
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <h3><a href="https://sites.google.com/view/teplitskiy">Misha Teplitskiy</a> (University of Michigan)</h3>
+                                <p>
+                                    <img src="img/teplitskiy.jpg" class="pull-left gap-right img-rounded" width="120"/>
+                                </p>
+                                <div class="panel-heading" role="tab" id="heading-teplitskiy">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#collapse-teplitskiy" aria-expanded="true" aria-controls="collapse-teplitskiy">
+                                            Bio
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-teplitskiy" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-teplitskiy">
+                                    Misha Teplitskiy is an Assistant Professor at the School of Information, University of Michigan. His research is at the intersection of Science of Science + Sociology of Organizations + Computational Social Science. He studies how social and organizational factors affect scientific discovery. He is especially interested in evaluation practices in science, and whether they promote or stifle innovation. My approach relies primarily on field experiments -- interventions in scientific competitions and other settings -- and applying computational tools to large-scale observational data. Previously, he was a postdoc at the Laboratory for Innovation Science at Harvard (LISH). He received his PhD in Sociology from the University of Chicago, where he was a member of KnowledgeLab.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <h3><a href="https://blog.archive.org/author/mark/">Mark Graham</a> (Internet Archive)</h3>
+                                <p>
+                                    <img src="img/graham.png" class="pull-left gap-right img-rounded" width="120"/>
+                                </p>
+                                <div class="panel-heading" role="tab" id="heading-graham">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#collapse-graham" aria-expanded="true" aria-controls="collapse-graham">
+                                            Bio
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-graham" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-graham">
+                                    Mark Graham has created and managed innovative online products and services since 1984. As Director of the Wayback Machine he is responsible for capturing, preserving and helping people discover and use, more than 1 billion new web captures each week. Previously, Mark was Senior Vice President with NBC News, Senior Vice President of Technology with iVillage, and a co-founder of Rojo Networks. In the early days of the net he managed technology and business development at The WELL and also helped bring the pre-web Internet to millions of people by running AOL's Gopher project as part of their Internet Center. He managed technology for the pioneering US-Soviet Sovam Teleport email service and co-founded and managed PeaceNet, IGC.org, and APC.org. Mark's early training and experience with computer-mediated communications was acquired while he served in the US Air Force, spending more than 3 years working at the Air Force Data Services Center at the Pentagon.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <h3><a href="https://www.isi.edu/integration/people/lerman/">Kristina Lerman</a> (USC ISI)</h3>
+                                <p>
+                                    <img src="img/lerman.jpg" class="pull-left gap-right img-rounded" width="120"/>
+                                </p>
+                                <div class="panel-heading" role="tab" id="heading-lerman">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#collapse-lerman" aria-expanded="true" aria-controls="collapse-lerman">
+                                            Bio
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-lerman" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-lerman">
+                                    Kristina Lerman is a Project Leader at the Information Sciences Institute and holds a joint appointment as a Research Associate Professor in the USC Viterbi School of Engineering's Computer Science Department. Her research focuses on applying network- and machine learning-based methods to problems in social computing.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <h3><a href="https://mako.cc/academic/">Benjamin Mako Hill</a> (University of Washington)</h3>
+                                <p>
+                                    <img src="img/hill.png" class="pull-left gap-right img-rounded" width="120"/>
+                                </p>
+                                <div class="panel-heading" role="tab" id="heading-hill">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#collapse-hill" aria-expanded="true" aria-controls="collapse-hill">
+                                            Bio
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-hill" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-hill">
+                                    Benjamin Mako Hill is an Assistant Professor in the University of Washington Department of Communication, an Adjunct Assistant Professor in the departments of Human-Centered Design and Engineering and Computer Science and Engineering, and Affiliate Faculty in the Center for Statistics and the Social Sciences, the eScience Institute, and the "Design Use Build" (DUB) group that supports research on on human computer interaction. He is also a Faculty Associate at the Berkman Klein Center for Internet and Society at Harvard University and an affiliate of the Institute of Quantitative Social Science at Harvard. Mako studies collective action in online communities and seeks to understand why some attempts at collaborative production — like Wikipedia and Linux — build large volunteer communities while the vast majority never attract even a second contributor. His research is deeply interdisciplinary, consists primarily of "big data" quantitative analyses, and lies at the intersection of communication, human-computer interaction, and sociology. Mako received his PhD from MIT.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <h3><a href="#">Jérôme Hergueux</a> (CNRS)</h3>
+                                <p>
+                                    <!-- <img src="img/teplitskiy.jpg" class="pull-left gap-right img-rounded" width="120"/> -->
+                                </p>
+                                <div class="panel-heading" role="tab" id="heading-teplitskiy">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#collapse-teplitskiy" aria-expanded="true" aria-controls="collapse-teplitskiy">
+                                            Bio
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-teplitskiy" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-teplitskiy">
+                                    Jerome is an Assistant Research Professor at the French
+                                    National Center for Scientific Research (CNRS), a Research Affiliate at
+                                    the Center for Law and Economics at ETH Zurich, and a Faculty Associate
+                                    at the Berkman Klein Center for Internet & Society at Harvard
+                                    University. Jerome is a behavioral economist operating at the
+                                    boundaries between psychology, economics and computational social
+                                    science. In his research, he couples experimental methods with the
+                                    analysis of big data to uncover how psychological and cognitive traits
+                                    shape our behavior over the Internet, with a particular focus on online
+                                    cooperation, peer production and decision making. Jerome's most recent
+                                    research leverages field data from several Internet-based environments,
+                                    such as online poker, open source software development platforms, and
+                                    Wikipedia. His current interests relate to the study of how people deal
+                                    with their decision making biases, as well as the determinants and
+                                    consequences of communication style and leadership in virtual teamwork.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--div class="row-fluid">
+                             <div class="span12">
+                             <h3><a href="...">...</a> (...)</h3>
+                             <p>
+                             <img src="img/teplitskiy.jpg" class="pull-left gap-right img-rounded" width="120"/>
+                             <div class="talk-title">Title and abstract TBA</div>
+                             </p>
+                             <div class="panel-heading" role="tab" id="heading-teplitskiy">
+                             <h4 class="panel-title">
+                             <a data-toggle="collapse" href="#collapse-teplitskiy" aria-expanded="true" aria-controls="collapse-teplitskiy">
+                             Bio
+                             </a>
+                             </h4>
+                             </div>
+                             <div id="collapse-teplitskiy" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-teplitskiy">
+                             ...
+                             </div>
+                             </div>
+                             </div-->
+
+                    </section>
+
+                    <!-- Papers
+                         ================================================== >
+                         <section id="papers">
+                         <div class="page-header">
+                         <h1>Accepted papers</h1>
+                         </div>
+
+                         <div class="authors">...</div>
+                         ...
+                         [<a href="papers/Wiki_Workshop_2020_paper_XXX.pdf">PDF</a>]
+
+                         <div class="authors">...</div>
+                         ...
+
+                         </section-->
+
+                    <!-- Dates
+                         ================================================== -->
+                    <section id="dates">
+                        <div class="page-header">
+                            <h1>Key dates</h1>
+                        </div>
+                        <p>Workshop date: Tuesday, 21 April 2020</p>
+                        <p><b>If authors want paper to appear in proceedings:</b></p>
+                        <ul>
+                            <li>Submission deadline: 17 January 2020</li>
+                            <li>Author feedback: 3 February 2020</li>
+                            <li>Camera-ready version due: 17 February 2020</li>
+                        </ul>
+                        <p><b>If authors <i>do not</i> want paper to appear in proceedings:</b></p>
+                        <ul>
+                            <li>Submission deadline: 21 February 2020</li>
+                            <li>Author feedback: 6 March 2020</li>
+                        </ul>
+
+                        Note: If you need a visa to travel to Taiwan and your application for the visa depends on your workshop paper being accepted, we would advise you to submit your workshop paper for the 17 January deadline. (You could still opt for not having your paper included in the proceedings.)
+
+                    </section>
+
+                    <!-- Call for contributions
+                         ================================================== -->
+                    <section id="call">
+                        <div class="page-header">
+                            <h1>Call for contributions</h1>
+                        </div>
+                        <p>
+                            Wikipedia is one of the most popular sites on the Web, a main source of knowledge for
+                            a large fraction of Internet users, and one of the very few projects that make not only their
+                            content but also many activity logs available to the public. Furthermore, other Wikimedia projects,
+                            such as Wikidata and Wikimedia Commons, have been created to share other types of
+                            knowledge with the world for free. For a variety of reasons (quality and quantity of content,
+                            reach in many languages, process of content production, availability of data, etc.) such projects
+                            have become important objects of study for researchers across many subfields of the computational
+                            and social sciences, such as social network analysis, artificial intelligence, linguistics,
+                            natural language processing, social psychology, education, anthropology, political science,
+                            human&ndash;computer interaction, and cognitive science.
+                        </p>
+                        <p>
+                            The goal of this workshop
+                            is to bring together researchers exploring all aspects of Wikimedia projects such as Wikipedia,
+                            Wikidata, and Commons. With members of the Wikimedia Foundation's Research team on the
+                            organizing committee and with the experience of successful
+                            workshops in
+                            <a href="https://wikiworkshop.org/2015/">2015</a>,
+                            <a href="https://wikiworkshop.org/2016/">2016</a>,
+                            <a href="https://wikiworkshop.org/2017/">2017</a>,
+                            <a href="https://wikiworkshop.org/2018/">2018</a>, and
+                            <a href="https://wikiworkshop.org/2019/">2019</a>,
+                            we aim to continue facilitating a direct pathway for exchanging ideas between the organization that
+                            coordinates Wikimedia projects and the researchers interested in studying them.
+                        </p>
+                        <p>Topics of interest include, but are not limited to</p>
+                        <ul>
+                            <li>new technologies and initiatives to grow content, quality, diversity, and participation across Wikimedia projects</li>
+                            <li>use of bots, algorithms, and crowdsourcing strategies to curate, source, or verify content and structured data</li>
+                            <li>bias in content and gaps of knowledge</li>
+                            <li>diversity of Wikimedia editors and users</li>
+                            <li>detection of low-quality, promotional, or fake content, as well as fake accounts (e.g., sock puppets)</li>
+                            <li>questions related to community health (e.g., sentiment analysis, harassment detection)</li>
+                            <li>understanding editor motivations, engagement models, and incentives</li>
+                            <li>Wikimedia consumer motivations and their needs: readers, researchers, tool/API developers</li>
+                            <li>innovative uses of Wikipedia and other Wikimedia projects for AI and NLP applications</li>
+                            <li>consensus-finding and conflict resolution on editorial issues</li>
+                            <li>participation in discussions and their dynamics</li>
+                            <li>dynamics of content reuse across projects and the impact of policies and community norms on reuse</li>
+                            <li>privacy</li>
+                            <li>collaborative content creation (unstructured, semi-structured, or structured)</li>
+                            <li>innovative uses of Wikimedia projects' content and consumption patterns as sensors for real-world events, culture, etc.</li>
+                            <li>open-source research code, datasets, and tools to support research on Wikimedia contents and communities</li>
+                        </ul>
+                        <p>Papers should be 1 to 8 pages long and will be published on the workshop webpage and optionally (depending on the authors' choice) in the workshop proceedings.
+                            The review process will be single-blind (as opposed to double-blind), i.e., authors should include their names and affiliations in their submissions.
+                            Authors whose papers are accepted to the workshop will have the opportunity to participate in a poster session.
+                        </p>
+
+                        <p style="font-weight:bold">We explicitly encourage the submission of preliminary work in the form of extended abstracts (1 or 2 pages).</p>
+                    </section>
+
+                    <!-- Submission instructions
+                         ================================================== -->
+                    <section id="submission">
+                        <div class="page-header">
+                            <h1>Submission instructions</h1>
+                        </div>
+
+                        <p>Papers should be 1 to 8 pages long. We explicitly encourage the submission of
+                            preliminary work in the form of extended abstracts (1 or 2 pages). No need to anonymize your submissions.</p>
+                        <p>For submission dates, see above.</p>
+
+                        <ul>
+                            <li>Format: <a href="https://www.acm.org/publications/proceedings-template">ACM SIG conference proceedings template</a> (use <tt>sample-sigconf.pdf</tt> as the template)</li>
+                            <li>Submission site: <a href="https://easychair.org/conferences/?conf=wikiworkshop2020">https://easychair.org/conferences/?conf=wikiworkshop2020</a>
+                            </li>
+                        </ul>
+
+                    </section>
+
+                    <!-- Program committee
+                         ================================================== -->
+                    <section id="program-committee">
+                        <div class="page-header">
+                            <h1>Program committee</h1>
+                        </div>
+                        <ul>
+                            <li>Pushkal Agarwal, King's College London</li>
+                            <li>Giovanni Colavizza, University of Amsterdam</li>
+                            <li>Martin Gerlach, Wikimedia Foundation</li>
+                            <li>Kristina Gligorić, EPFL</li>
+                            <li>Isaac Johnson, Wikimedia Foundation</li>
+                            <li>Markus Krötzsch, University of Dresden</li>
+                            <li>Florian Lemmerich, RWTH Aachen University</li>
+                            <li>Jonathan Morgan, Wikimedia Foundation</li>
+                            <li>Maxime Peyrard, EPFL</li>
+                            <li>Tiziano Piccardi, EPFL</li>
+                            <li>Diego Saez-Trumper, Wikimedia Foundation</li>
+                            <li>Morten Warncke-Wang, Wikimedia Foundation</li>
+                            <li>Ramtin Yazdanian, EPFL </li>
+                            <li>Amy Zhang, MIT</li>
+                        </ul>
+
+                        <!-- Previous editions
+                             ================================================== -->
+                        <section id="previous">
+                            <div class="page-header">
+                                <h1>Previous editions</h1>
+                            </div>
+                            <ul>
+                                <li><a href="https://wikiworkshop.org/2019">@ WWW 2019 (San Francisco, USA)</a></li>
+                                <li><a href="https://wikiworkshop.org/2018">@ WWW 2018 (Lyon, France)</a></li>
+                                <li><a href="https://wikiworkshop.org/2017">@ WWW 2017 (Perth, Australia)</a></li>
+                                <li><a href="https://wikiworkshop.org/2016">@ WWW 2016 (Montreal, Canada) and ICWSM 2016 (Cologne, Germany)</a></li>
+                                <li><a href="http://wikiworkshop.org/2015">@ ICWSM 2015 (Oxford, UK)</a></li>
+                            </ul>
+
+                            <!-- Organization
+                                 ================================================== -->
+                            <section id="organization">
+                                <div class="page-header">
+                                    <h1>Organization</h1>
+                                </div>
+                                <div class="row-fluid">
+                                    <div class="span4">
+                                        <h3><a href="http://www.visionresearchwitch.com/">Miriam Redi</a></h3>
+                                        <p>Miriam is a Research Scientist at the Wikimedia Foundation and Visiting Research Fellow at King's College London. Formerly, she worked as a Research Scientist at Yahoo! Labs in Barcelona and Nokia Bell Labs in Cambridge. She received her PhD from EURECOM, Sophia Antipolis. She conducts research in social multimedia computing, working on fair, interpretable, multimodal machine learning solutions to improve knowledge equity.</p>
+                                    </div>
+                                    <div class="span4">
+                                        <h3><a href="https://www.mediawiki.org/wiki/User:LZia_(WMF)">Leila Zia</a></h3>
+                                        <p>Leila is a senior research scientist at the Wikimedia Foundation. Her current research interests are on understanding Wikipedia's readers, quantifying and addressing the gaps of knowledge in Wikipedia and Wikidata, and understanding and improving diversity in Wikipedia. She holds a PhD in management science and engineering from Stanford University.</p>
+                                    </div>
+                                    <div class="span4">
+                                        <h3><a href="https://dlab.epfl.ch/people/west/">Robert West</a></h3>
+                                        <p>Bob is an assistant professor of Computer Science at EPFL, where he heads the Data Science Lab. His research aims to understand, predict, and enhance human behavior in social and information networks by developing techniques in data science, data mining, network analysis, machine learning, and natural language processing. He holds a PhD in computer science from Stanford University.</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Contact
+                                 ================================================== -->
+                            <section id="contact">
+                                <div class="page-header">
+                                    <h1>Contact</h1>
+                                </div>
+                                <p>Please direct your questions to wikiworkshop<script type="text/javascript">document.write('@')</script>googlegroups<script type="text/javascript">document.write('.')</script>com.</p>
+                            </section>
+
+                </div>
+
             </div>
-          </div>
 
-          <div class="row-fluid">
-            <div class="span12">
-              <h3><a href="https://www.isi.edu/integration/people/lerman/">Kristina Lerman</a> (USC ISI)</h3>
-              <p>
-                <img src="img/lerman.jpg" class="pull-left gap-right img-rounded" width="120"/>
-                <div class="talk-title">Title and abstract TBA</div>
-                <!-- ... -->
-              </p>
-              <div class="panel-heading" role="tab" id="heading-lerman">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" href="#collapse-lerman" aria-expanded="true" aria-controls="collapse-lerman">
-                    Bio
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse-lerman" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-lerman">
-                Kristina Lerman is a Project Leader at the Information Sciences Institute and holds a joint appointment as a Research Associate Professor in the USC Viterbi School of Engineering's Computer Science Department. Her research focuses on applying network- and machine learning-based methods to problems in social computing.
-              </div>
+        </div> <!-- /container -->
+
+        <!-- Footer
+             ================================================== -->
+        <footer class="footer">
+            <div class="container">
             </div>
-          </div>
+        </footer>
 
-          <div class="row-fluid">
-            <div class="span12">
-              <h3><a href="https://mako.cc/academic/">Benjamin Mako Hill</a> (University of Washington)</h3>
-              <p>
-                <img src="img/hill.png" class="pull-left gap-right img-rounded" width="120"/>
-                <div class="talk-title">The Growth and Decline of Digital Knowledge Commons</div>
+        <!-- Start tweet button -->
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <script type="text/javascript">
+        // Source: http://pixabay.com/en/reptile-chameleon-yemen-pets-316735/
+        $.backstretch("img/background2.jpg");
+        // Fix from http://stackoverflow.com/questions/19027749/how-to-disable-slider-in-bootstrap-slider-js,
+        // so sliders can be disabled.
+        $.fn.slider.Constructor.prototype.disable = function () {
+            this.picker.off();
+        }
+        $.fn.slider.Constructor.prototype.enable = function () {
+            if (this.touchCapable) {
+                // Touch: Bind touch events:
+                this.picker.on({
+                    touchstart: $.proxy(this.mousedown, this)
+                });
+            } else {
+                this.picker.on({
+                    mousedown: $.proxy(this.mousedown, this)
+                });
+            }
+        }
+        </script>
+        <!-- End tweet button -->
 
-                After increasing rapidly over seven years, the number of active
-                contributors to English Wikipedia peaked in 2007 and has been in
-                decline since. Of course, Wikipedia is only one example of "peer
-                production"—a model of collaborative production that also lies
-                behind millions of wikis, free/open source software projects,
-                websites like OpenStreetMap, and more. Unfortunately, there is
-                evidence that English Wikipedia's pattern of growth and decline
-                occurs in these other efforts as well. A body of emerging
-                scholarship suggests that decline in projects' contributor bases
-                tends to coincide with a shift from the lightweight governance and
-                porous boundaries closely associated with peer production to less
-                open forms of organization.
-                <br/>
-                Why would successful peer production communities become less open in
-                ways that cause a decline in their contributor bases?Drawing from
-                research into collective action and public goods as well as Ostrom's
-                work on common-pool resources, I will present a theoretical model
-                that suggests an answer. I will argue that peer production projects'
-                success at building valuable knowledge commons drives both a
-                virtuous cycle of good contributions as well as well an influx of
-                bad-faith actors in a dynamic set of relationships that leads
-                communities to become increasingly closed in order to protect the
-                knowledge bases they have built. I will end by presenting a range of
-                empirical evidence in support of the model and by discussing some of
-                its implications.
-              </p>
-              <div class="panel-heading" role="tab" id="heading-hill">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" href="#collapse-hill" aria-expanded="true" aria-controls="collapse-hill">
-                    Bio
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse-hill" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-hill">
-                Benjamin Mako Hill is an Assistant Professor in the University of Washington Department of Communication, an Adjunct Assistant Professor in the departments of Human-Centered Design and Engineering and Computer Science and Engineering, and Affiliate Faculty in the Center for Statistics and the Social Sciences, the eScience Institute, and the "Design Use Build" (DUB) group that supports research on on human computer interaction. He is also a Faculty Associate at the Berkman Klein Center for Internet and Society at Harvard University and an affiliate of the Institute of Quantitative Social Science at Harvard. Mako studies collective action in online communities and seeks to understand why some attempts at collaborative production — like Wikipedia and Linux — build large volunteer communities while the vast majority never attract even a second contributor. His research is deeply interdisciplinary, consists primarily of "big data" quantitative analyses, and lies at the intersection of communication, human-computer interaction, and sociology. Mako received his PhD from MIT.
-              </div>
-            </div>
-          </div>
+        <!-- Start of StatCounter Code for Default Guide -->
+        <script type="text/javascript">
+        var sc_project=11195272;
+        var sc_invisible=1;
+        var sc_security="aa90b74f";
+        var scJsHost = (("https:" == document.location.protocol) ?
+                        "https://secure." : "http://www.");
+        document.write("<sc"+"ript type='text/javascript' src='" +
+                       scJsHost+
+                       "statcounter.com/counter/counter.js'></"+"script>");
+        </script>
+        <noscript><div class="statcounter"><a title="web analytics"
+                                              href="http://statcounter.com/" target="_blank"><img
+                                                                                                 class="statcounter"
+                                                                                                 src="//c.statcounter.com/11195272/0/aa90b74f/1/" alt="web
+                                                                                                        analytics"></a></div></noscript>
+        <!-- End of StatCounter Code for Default Guide -->
 
-          <!--div class="row-fluid">
-            <div class="span12">
-              <h3><a href="...">...</a> (...)</h3>
-              <p>
-                <img src="img/teplitskiy.jpg" class="pull-left gap-right img-rounded" width="120"/>
-                <div class="talk-title">Title and abstract TBA</div>
-              </p>
-              <div class="panel-heading" role="tab" id="heading-teplitskiy">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" href="#collapse-teplitskiy" aria-expanded="true" aria-controls="collapse-teplitskiy">
-                    Bio
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse-teplitskiy" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-teplitskiy">
-                ...
-              </div>
-            </div>
-          </div-->
+        <!-- Le javascript
+             ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+        <script src="bootstrap/assets/js/jquery.js"></script>
+        <script src="bootstrap/assets/js/bootstrap-transition.js"></script>
+        <script src="bootstrap/assets/js/bootstrap-alert.js"></script>
+        <script src="bootstrap/assets/js/bootstrap-modal.js"></script>
+        <script src="bootstrap/assets/js/bootstrap-dropdown.js"></script>
+        <script src="bootstrap/assets/js/bootstrap-scrollspy.js"></script>
+        <script src="bootstrap/assets/js/bootstrap-tab.js"></script>
+        <script src="bootstrap/assets/js/bootstrap-tooltip.js"></script>
+        <script src="bootstrap/assets/js/bootstrap-popover.js"></script>
+        <script src="bootstrap/assets/js/bootstrap-button.js"></script>
+        <script src="bootstrap/assets/js/bootstrap-collapse.js"></script>
+        <script src="bootstrap/assets/js/bootstrap-carousel.js"></script>
+        <script src="bootstrap/assets/js/bootstrap-typeahead.js"></script>
+        <script src="bootstrap/assets/js/bootstrap-affix.js"></script>
 
-        </section>
+        <script src="bootstrap/assets/js/holder.js"></script>
+        <script src="bootstrap/assets/js/prettify.js"></script>
 
-        <!-- Papers
-        ================================================== >
-        <section id="papers">
-          <div class="page-header">
-            <h1>Accepted papers</h1>
-          </div>
+        <script src="bootstrap/assets/js/application.js"></script>
 
-          <div class="authors">...</div>
-          ...
-          [<a href="papers/Wiki_Workshop_2020_paper_XXX.pdf">PDF</a>]
-
-          <div class="authors">...</div>
-          ...
-
-        </section-->
-
-        <!-- Dates
-        ================================================== -->
-        <section id="dates">
-          <div class="page-header">
-            <h1>Key dates</h1>
-          </div>
-          <p>Workshop date: Tuesday, 21 April 2020</p>
-          <p><b>If authors want paper to appear in proceedings:</b></p>
-          <ul>
-            <li>Submission deadline: 17 January 2020</li>
-            <li>Author feedback: 3 February 2020</li>
-            <li>Camera-ready version due: 17 February 2020</li>
-          </ul>
-          <p><b>If authors <i>do not</i> want paper to appear in proceedings:</b></p>
-          <ul>
-            <li>Submission deadline: 21 February 2020</li>
-            <li>Author feedback: 6 March 2020</li>
-          </ul>
-
-          Note: If you need a visa to travel to Taiwan and your application for the visa depends on your workshop paper being accepted, we would advise you to submit your workshop paper for the 17 January deadline. (You could still opt for not having your paper included in the proceedings.)
-
-        </section>
-
-        <!-- Call for contributions
-        ================================================== -->
-        <section id="call">
-          <div class="page-header">
-            <h1>Call for contributions</h1>
-          </div>
-          <p>
-          Wikipedia is one of the most popular sites on the Web, a main source of knowledge for
-          a large fraction of Internet users, and one of the very few projects that make not only their
-          content but also many activity logs available to the public. Furthermore, other Wikimedia projects,
-          such as Wikidata and Wikimedia Commons, have been created to share other types of
-          knowledge with the world for free. For a variety of reasons (quality and quantity of content,
-          reach in many languages, process of content production, availability of data, etc.) such projects
-          have become important objects of study for researchers across many subfields of the computational
-          and social sciences, such as social network analysis, artificial intelligence, linguistics,
-          natural language processing, social psychology, education, anthropology, political science,
-          human&ndash;computer interaction, and cognitive science.
-          </p>
-          <p>
-          The goal of this workshop
-          is to bring together researchers exploring all aspects of Wikimedia projects such as Wikipedia,
-          Wikidata, and Commons. With members of the Wikimedia Foundation's Research team on the
-          organizing committee and with the experience of successful
-          workshops in
-          <a href="https://wikiworkshop.org/2015/">2015</a>,
-          <a href="https://wikiworkshop.org/2016/">2016</a>,
-          <a href="https://wikiworkshop.org/2017/">2017</a>,
-          <a href="https://wikiworkshop.org/2018/">2018</a>, and
-          <a href="https://wikiworkshop.org/2019/">2019</a>,
-          we aim to continue facilitating a direct pathway for exchanging ideas between the organization that
-          coordinates Wikimedia projects and the researchers interested in studying them.
-          </p>
-          <p>Topics of interest include, but are not limited to</p>
-          <ul>
-            <li>new technologies and initiatives to grow content, quality, diversity, and participation across Wikimedia projects</li>
-            <li>use of bots, algorithms, and crowdsourcing strategies to curate, source, or verify content and structured data</li>
-            <li>bias in content and gaps of knowledge</li>
-            <li>diversity of Wikimedia editors and users</li>
-            <li>detection of low-quality, promotional, or fake content, as well as fake accounts (e.g., sock puppets)</li>
-            <li>questions related to community health (e.g., sentiment analysis, harassment detection)</li>
-            <li>understanding editor motivations, engagement models, and incentives</li>
-            <li>Wikimedia consumer motivations and their needs: readers, researchers, tool/API developers</li>
-            <li>innovative uses of Wikipedia and other Wikimedia projects for AI and NLP applications</li>
-            <li>consensus-finding and conflict resolution on editorial issues</li>
-            <li>participation in discussions and their dynamics</li>
-            <li>dynamics of content reuse across projects and the impact of policies and community norms on reuse</li>
-            <li>privacy</li>
-            <li>collaborative content creation (unstructured, semi-structured, or structured)</li>
-            <li>innovative uses of Wikimedia projects' content and consumption patterns as sensors for real-world events, culture, etc.</li>
-            <li>open-source research code, datasets, and tools to support research on Wikimedia contents and communities</li>
-          </ul>
-          <p>Papers should be 1 to 8 pages long and will be published on the workshop webpage and optionally (depending on the authors' choice) in the workshop proceedings.
-            The review process will be single-blind (as opposed to double-blind), i.e., authors should include their names and affiliations in their submissions.
-            Authors whose papers are accepted to the workshop will have the opportunity to participate in a poster session.
-          </p>
-
-          <p style="font-weight:bold">We explicitly encourage the submission of preliminary work in the form of extended abstracts (1 or 2 pages).</p>
-        </section>
-
-        <!-- Submission instructions
-        ================================================== -->
-        <section id="submission">
-          <div class="page-header">
-            <h1>Submission instructions</h1>
-          </div>
-
-          <p>Papers should be 1 to 8 pages long. We explicitly encourage the submission of
-            preliminary work in the form of extended abstracts (1 or 2 pages). No need to anonymize your submissions.</p>
-          <p>For submission dates, see above.</p>
-
-          <ul>
-            <li>Format: <a href="https://www.acm.org/publications/proceedings-template">ACM SIG conference proceedings template</a> (use <tt>sample-sigconf.pdf</tt> as the template)</li>
-            <li>Submission site: <a href="https://easychair.org/conferences/?conf=wikiworkshop2020">https://easychair.org/conferences/?conf=wikiworkshop2020</a>
-            </li>
-          </ul>
-
-        </section>
-
-        <!-- Program committee
-        ================================================== -->
-        <section id="program-committee">
-          <div class="page-header">
-            <h1>Program committee</h1>
-          </div>
-          <ul>
-            <li>Pushkal Agarwal, King's College London</li>
-            <li>Giovanni Colavizza, University of Amsterdam</li>
-            <li>Martin Gerlach, Wikimedia Foundation</li>
-            <li>Kristina Gligorić, EPFL</li>
-            <li>Isaac Johnson, Wikimedia Foundation</li>
-            <li>Markus Krötzsch, University of Dresden</li>
-            <li>Florian Lemmerich, RWTH Aachen University</li>
-            <li>Jonathan Morgan, Wikimedia Foundation</li>
-            <li>Maxime Peyrard, EPFL</li>
-            <li>Tiziano Piccardi, EPFL</li>
-            <li>Diego Saez-Trumper, Wikimedia Foundation</li>
-            <li>Morten Warncke-Wang, Wikimedia Foundation</li>
-            <li>Ramtin Yazdanian, EPFL </li>
-            <li>Amy Zhang, MIT</li>
-          </ul>
-
-        <!-- Previous editions
-        ================================================== -->
-        <section id="previous">
-          <div class="page-header">
-            <h1>Previous editions</h1>
-          </div>
-          <ul>
-            <li><a href="https://wikiworkshop.org/2019">@ WWW 2019 (San Francisco, USA)</a></li>
-            <li><a href="https://wikiworkshop.org/2018">@ WWW 2018 (Lyon, France)</a></li>
-            <li><a href="https://wikiworkshop.org/2017">@ WWW 2017 (Perth, Australia)</a></li>
-            <li><a href="https://wikiworkshop.org/2016">@ WWW 2016 (Montreal, Canada) and ICWSM 2016 (Cologne, Germany)</a></li>
-            <li><a href="http://wikiworkshop.org/2015">@ ICWSM 2015 (Oxford, UK)</a></li>
-          </ul>
-
-        <!-- Organization
-        ================================================== -->
-        <section id="organization">
-          <div class="page-header">
-            <h1>Organization</h1>
-          </div>
-          <div class="row-fluid">
-            <div class="span4">
-              <h3><a href="http://www.visionresearchwitch.com/">Miriam Redi</a></h3>
-              <p>Miriam is a Research Scientist at the Wikimedia Foundation and Visiting Research Fellow at King's College London. Formerly, she worked as a Research Scientist at Yahoo! Labs in Barcelona and Nokia Bell Labs in Cambridge. She received her PhD from EURECOM, Sophia Antipolis. She conducts research in social multimedia computing, working on fair, interpretable, multimodal machine learning solutions to improve knowledge equity.</p>
-            </div>
-            <div class="span4">
-              <h3><a href="https://www.mediawiki.org/wiki/User:LZia_(WMF)">Leila Zia</a></h3>
-              <p>Leila is a senior research scientist at the Wikimedia Foundation. Her current research interests are on understanding Wikipedia's readers, quantifying and addressing the gaps of knowledge in Wikipedia and Wikidata, and understanding and improving diversity in Wikipedia. She holds a PhD in management science and engineering from Stanford University.</p>
-            </div>
-            <div class="span4">
-              <h3><a href="https://dlab.epfl.ch/people/west/">Robert West</a></h3>
-              <p>Bob is an assistant professor of Computer Science at EPFL, where he heads the Data Science Lab. His research aims to understand, predict, and enhance human behavior in social and information networks by developing techniques in data science, data mining, network analysis, machine learning, and natural language processing. He holds a PhD in computer science from Stanford University.</p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Contact
-        ================================================== -->
-        <section id="contact">
-          <div class="page-header">
-            <h1>Contact</h1>
-          </div>
-          <p>Please direct your questions to wikiworkshop<script type="text/javascript">document.write('@')</script>googlegroups<script type="text/javascript">document.write('.')</script>com.</p>
-        </section>
-
-      </div>
-
-    </div>
-
-    </div> <!-- /container -->
-
-    <!-- Footer
-    ================================================== -->
-    <footer class="footer">
-      <div class="container">
-      </div>
-    </footer>
-
-<!-- Start tweet button -->
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-<script type="text/javascript">
-  // Source: http://pixabay.com/en/reptile-chameleon-yemen-pets-316735/
-  $.backstretch("img/background2.jpg");
-  // Fix from http://stackoverflow.com/questions/19027749/how-to-disable-slider-in-bootstrap-slider-js,
-  // so sliders can be disabled.
-  $.fn.slider.Constructor.prototype.disable = function () {
-    this.picker.off();
-  }
-  $.fn.slider.Constructor.prototype.enable = function () {
-    if (this.touchCapable) {
-      // Touch: Bind touch events:
-      this.picker.on({
-        touchstart: $.proxy(this.mousedown, this)
-      });
-    } else {
-      this.picker.on({
-        mousedown: $.proxy(this.mousedown, this)
-      });
-    }
-  }
-</script>
-<!-- End tweet button -->
-
-<!-- Start of StatCounter Code for Default Guide -->
-<script type="text/javascript">
-var sc_project=11195272;
-var sc_invisible=1;
-var sc_security="aa90b74f";
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="web analytics"
-href="http://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="//c.statcounter.com/11195272/0/aa90b74f/1/" alt="web
-analytics"></a></div></noscript>
-<!-- End of StatCounter Code for Default Guide -->
-
-<!-- Le javascript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
-<script src="bootstrap/assets/js/jquery.js"></script>
-<script src="bootstrap/assets/js/bootstrap-transition.js"></script>
-<script src="bootstrap/assets/js/bootstrap-alert.js"></script>
-<script src="bootstrap/assets/js/bootstrap-modal.js"></script>
-<script src="bootstrap/assets/js/bootstrap-dropdown.js"></script>
-<script src="bootstrap/assets/js/bootstrap-scrollspy.js"></script>
-<script src="bootstrap/assets/js/bootstrap-tab.js"></script>
-<script src="bootstrap/assets/js/bootstrap-tooltip.js"></script>
-<script src="bootstrap/assets/js/bootstrap-popover.js"></script>
-<script src="bootstrap/assets/js/bootstrap-button.js"></script>
-<script src="bootstrap/assets/js/bootstrap-collapse.js"></script>
-<script src="bootstrap/assets/js/bootstrap-carousel.js"></script>
-<script src="bootstrap/assets/js/bootstrap-typeahead.js"></script>
-<script src="bootstrap/assets/js/bootstrap-affix.js"></script>
-
-<script src="bootstrap/assets/js/holder.js"></script>
-<script src="bootstrap/assets/js/prettify.js"></script>
-
-<script src="bootstrap/assets/js/application.js"></script>
-
-<!--script src="bootstrap/js/bootstrap.min.js"></script-->
-</body>
+        <!--script src="bootstrap/js/bootstrap.min.js"></script-->
+    </body>
 </html>
