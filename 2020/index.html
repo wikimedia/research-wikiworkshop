@@ -563,35 +563,9 @@
             </div>
         </footer>
 
-        <!-- Start tweet button -->
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        <script type="text/javascript">
-        // Source: http://pixabay.com/en/reptile-chameleon-yemen-pets-316735/
-        $.backstretch("img/background2.jpg");
-        // Fix from http://stackoverflow.com/questions/19027749/how-to-disable-slider-in-bootstrap-slider-js,
-        // so sliders can be disabled.
-        $.fn.slider.Constructor.prototype.disable = function () {
-            this.picker.off();
-        }
-        $.fn.slider.Constructor.prototype.enable = function () {
-            if (this.touchCapable) {
-                // Touch: Bind touch events:
-                this.picker.on({
-                    touchstart: $.proxy(this.mousedown, this)
-                });
-            } else {
-                this.picker.on({
-                    mousedown: $.proxy(this.mousedown, this)
-                });
-            }
-        }
-        </script>
-        <!-- End tweet button -->
-
         <!-- Le javascript
              ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
         <script src="bootstrap/assets/js/jquery.js"></script>
         <script src="bootstrap/assets/js/bootstrap-transition.js"></script>
         <script src="bootstrap/assets/js/bootstrap-alert.js"></script>
