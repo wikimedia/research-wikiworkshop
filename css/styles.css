@@ -1,0 +1,34 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative;
+}
+
+.bg-dark-2 {
+    background-color: black !important;
+}
+
+.navbar-dark .navbar-brand {
+    color: #999;
+    font-size: 0.9em;
+}
+
+header h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.bs-docs-sidebar {
+    margin-top: 2em;
+    top: 3em;
+}
+
+.nav-pills .nav-link {
+    border: 1px solid #e5e5e5;
+    display: block;
+    margin: 0 0 -1px;
+    padding: 8px 14px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #08c;
+}
