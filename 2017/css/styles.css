@@ -22,3 +22,15 @@
     color: #fff;
     text-shadow: 0 0 10px rgba(255,255,255,.25);
 }
+
+.nav-pills .nav-link.active {
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+    background-color: #08c;
+}
+
+.gap-right { margin-right:5px; }
+.gap-left { margin-left:5px; }
+.authors { font-weight:bold; margin-top:3mm; }
+.talk-title { font-weight:bold; margin-bottom:3mm; }
+.table-nonfluid { width: auto !important; }
