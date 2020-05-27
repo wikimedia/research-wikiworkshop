@@ -1,596 +1,535 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wiki Workshop 2019</title>
-<meta description="Wiki Workshop 2019" />
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wiki Workshop 2019</title>
+        <meta description="Wiki Workshop 2019" />
 
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="bootstrap/assets/css/docs.css" rel="stylesheet">
-<link href="bootstrap/assets/css/prettify.css" rel="stylesheet">
+        <link href="../lib/bootstrap-4.5.0-dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../lib/bootstrap-4.5.0-dist/css/bootstrap-grid.min.css" rel="stylesheet">
+        <link href="../css/styles.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
 
-<style>
-.gap-right { margin-right:5px; }
-.gap-left { margin-left:5px; }
-.authors { font-weight:bold; margin-top:3mm; }
-.talk-title { font-weight:bold; margin-bottom:3mm; }
-.table-nonfluid { width: auto !important; }
-.myjumbotron {
-  background: #996600; /* Old browsers */
-  background: -moz-linear-gradient(45deg,  #000000 0%, #777777 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#000000), color-stop(100%,#777777)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(45deg,  #000000 0%,#777777 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(45deg,  #000000 0%,#777777 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(45deg,  #000000 0%,#777777 100%); /* IE10+ */
-  background: linear-gradient(45deg,  #996600 0%,#ffdd99 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.0), inset 0 -3px 7px rgba(0,0,0,.0);
-     -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.0), inset 0 -3px 7px rgba(0,0,0,.0);
-          box-shadow: inset 0 3px 7px rgba(0,0,0,.0), inset 0 -3px 7px rgba(0,0,0,.0);
-}
-.nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus {
-    color: #fff;
-    text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
-    background-color: #996600;
-}
-a {
-  color: #996600;
-}
-</style>
-
-</head>
-
-<body data-spy="scroll" data-target=".bs-docs-sidebar">
-
-  <!-- Navbar
-  ================================================== -->
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <!--a class="brand" href="./index.html">Bootstrap</a-->
-        <div class="nav-collapse collapse">
-          <ul class="nav">
-            <li class="">
-              <a href=""><b>Wiki Workshop 2019</b></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<!--
--->
-
-  <!-- Subhead
-  ================================================== -->
-  <header class="jumbotron subhead myjumbotron" id="overview">
-    <div class="container">
-      <h1>Wiki Workshop 2019</h1>
-      <p class="lead">
-        A forum bringing together researchers exploring all aspects of Wikipedia, Wikidata, and other Wikimedia projects.
-        Held at <a href="https://www2019.thewebconf.org/">The&nbsp;Web&nbsp;Conference&nbsp;2019</a> in San Francisco, Calif., May&nbsp;14, 2019.
-      </p>
-    </div>
-  </header>
-
-  <div class="container">
-
-    <div class="row">
-      <div class="span3 bs-docs-sidebar">
-        <div class="row-fluid" style="margin-top:1em">
-          <div class="span12" style="text-align:center">
-            <!--div class="fb-like" data-href="https://wikiworkshop.org" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
-            <br/>
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://wikiworkshop.org" data-count="none" data-hashtags="WikiWorkshop2019" data-dnt="true">Tweet</a-->
-            <a href="https://twitter.com/wikiworkshop" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @wikiworkshop</a>
-          </div>
-        </div>
-        <ul class="nav nav-list bs-docs-sidenav">
-          <li><a href="#news"><i class="icon-chevron-right"></i> News</a></li>
-          <li><a href="#schedule"><i class="icon-chevron-right"></i> Schedule</a></li>
-          <li><a href="#speakers"><i class="icon-chevron-right"></i> Invited speakers</a></li>
-          <li><a href="#papers"><i class="icon-chevron-right"></i> Accepted papers</a></li>
-          <li><a href="#dates"><i class="icon-chevron-right"></i> Key dates</a></li>
-          <li><a href="#call"><i class="icon-chevron-right"></i> Call for contributions</a></li>
-          <li><a href="#submission"><i class="icon-chevron-right"></i> Submission instructions</a></li>
-          <li><a href="#program-committee"><i class="icon-chevron-right"></i> Program committee</a></li>
-          <li><a href="#previous"><i class="icon-chevron-right"></i> Previous editions</a></li>
-          <li><a href="#organization"><i class="icon-chevron-right"></i> Organization</a></li>
-          <li><a href="#contact"><i class="icon-chevron-right"></i> Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="span9">
-
-        <!-- News
-        ================================================== -->
-        <section id="news">
-          <div class="page-header">
-            <h1>News</h1>
-          </div>
-          <ul>
-            <!--li>May 1, 2018: Speaker slides linked from this page (see respective talk abstracts below).</li>
-            <li>Apr. 25, 2018: The workshop was a big success. Thanks to all participants, speakers, and poster presenters!</li>
-            <li>Apr. 5, 2018: Keynote titles and abstracts announced.</li-->
-            <li>May 14, 2019: Workshop happened -- amazing!</li>
-            <li>Apr. 29, 2019: PDFs of accepted papers available.</li>
-            <li>Apr. 17, 2019: List of accepted papers announced.</li>
-            <li>Apr. 4, 2019: Workshop schedule announced.</li>
-            <li>Feb. 6, 2019: Denny Vrandečić confirmed as invited speaker.</li>
-            <li>Feb. 6, 2019: Erica Kochi confirmed as invited speaker.</li>
-            <li>Jan. 23, 2019: Jure Leskovec confirmed as invited speaker.</li>
-            <li>Jan. 23, 2019: Neil Thompson confirmed as invited speaker.</li>
-            <li>Jan. 23, 2019: Timnit Gebru confirmed as invited speaker.</li>
-            <li>Jan. 20, 2019: Workshop date announced: Tuesday, May 14, 2019.</li>
-            <li>Dec. 6, 2018: Wiki Workshop 2019 webpage online.</li>
-          </ul>
-        </section>
-
-        <!-- Schedule
-        ================================================== -->
-        <section id="schedule">
-          <div class="page-header">
-            <h1>Schedule</h1>
-          </div>
-          <!--p>We will have a series of invited talks by academia and industry experts, as well as a combination of lightning talks and a poster session for the accepted papers.</p>
-          <p>Details to be determined.</p-->
-          <!--p>This schedule is tentative and subject to change.</p-->
-          <table class="table table-nonfluid">
-            <tbody>
-              <tr><td> 9:00&nbsp;-&nbsp;9:20</td><td>Welcome and icebreaking</td></tr>
-              <tr><td> 9:20&nbsp;-&nbsp;10:05</td><td>Invited talk: Denny Vrandečić</td></tr>
-              <tr><td>10:05&nbsp;-&nbsp;10:17</td><td>Paper presentation: Mohsen Sayyadiharikandeh, Jonathan Gordon, Jose-Luis Ambite and Kristina Lerman: <i>Finding Prerequisite Relations Using the Wikipedia Clickstream</i></td></tr>
-              <tr><td>10:17&nbsp;-&nbsp;10:30</td><td>Paper presentation: Xiaoxi Chelsy Xie, Isaac Johnson and Anne Gomez: <i>Detecting and Gauging Impact on Wikipedia Page Views</i></td></tr>
-              <tr><td>10:30&nbsp;-&nbsp;11:00</td><td>Coffee break</td></tr>
-              <tr><td>11:00&nbsp;-&nbsp;11:45</td><td>Invited talk: Timnit Gebru</td></tr>
-              <tr><td>11:45&nbsp;-&nbsp;12:25</td><td>Poster spotlight presentations</td></tr>
-              <tr><td>12:25&nbsp;-&nbsp;12:30</td><td>Poster setup</td></tr>
-              <tr><td>12:30&nbsp;-&nbsp;14:00</td><td>Lunch and poster session</td></tr>
-              <tr><td>14:00&nbsp;-&nbsp;14:12</td><td>Paper presentation: Swati Goel, Ashton Anderson and Leila Zia: <i>Thanks for Stopping By: A Study of “Thanks” Usage on Wikimedia</i></td></tr>
-              <tr><td>14:12&nbsp;-&nbsp;14:25</td><td>Paper presentation: Ali Javanmardi and Lu Xiao: <i>What’s in the Content of Wikipedia’s Article for Deletion Discussions? Towards a Visual Analytic Approach</i></td></tr>
-              <tr><td>14:25&nbsp;-&nbsp;15:10</td><td>Invited talk: Erica Kochi</td></tr>
-              <tr><td>15:10&nbsp;-&nbsp;15:30</td><td>Open discussion</td></tr>
-              <tr><td>15:30&nbsp;-&nbsp;16:00</td><td>Coffee break</td></tr>
-              <tr><td>16:00&nbsp;-&nbsp;16:40</td><td>Invited talk: Jure Leskovec</td></tr>
-              <tr><td>16:40&nbsp;-&nbsp;17:25</td><td>Invited talk: Neil Thompson</td></tr>
-              <tr><td>17:25&nbsp;-&nbsp;17:30</td><td>Closing remarks</td></tr>
-            </tbody>
-          </table>
-          <!--p>Tea breaks and lunches will be served in the exhibition hall located in Pavilion 1.</p-->
-        </section>
-
-        <!-- Speakers
-        ================================================== -->
-        <section id="speakers">
-          <div class="page-header">
-            <h1>Invited speakers</h1>
-          </div>
-          <!--p>More speakers to be announced soon&mdash;stay tuned!</p-->
-
-          <div class="row-fluid">
-            <div class="span12">
-              <h3><a href="https://ai.google/research/people/vrandecic">Denny Vrandečić</a> (Google)</h3>
-              <p>
-                <img src="img/vrandecic.jpg" class="pull-left gap-right img-rounded" width="120"/>
-                <div class="talk-title">Beyond Wikidata</div>
-                Wikidata has quickly become a major wiki project. By becoming so, it has stretched what wikis can be successfully used for. We will take a look at the state of Wikidata, how it can help the Wikipedias (and other projects), and we'll discuss the question if we can take the wiki approach further to even more complex approaches, such as an Abstract Wikipedia.
-              </p>
-              <!--p>[<a href="http://www.cs.cornell.edu/home/kleinber/wiki18-slides.pdf">slides</a>]</p-->
-              <div class="panel-heading" role="tab" id="heading-vrandecic">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" href="#collapse-vrandecic" aria-expanded="true" aria-controls="collapse-vrandecic">
-                    Bio
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse-vrandecic" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-vrandecic">
-                Denny works at the Google Knowledge Graph. He previously has worked at the Karlsruhe Institute of Technology (2004-2012), the University of Southern California (2010), and as the project director of Wikidata at Wikimedia Deutschland (2012/13). His research interests are massive collaborative systems, knowledge bases, and the Semantic Web.
-              </div>
+    <body data-spy="scroll" data-target=".bs-docs-sidebar">
+        <nav class="navbar navbar-dark bg-dark-2 fixed-top p-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <a href="#" class="navbar-brand"><b>Wiki Workshop 2019</b></a>
+                    </div>
+                </div>
             </div>
-          </div>
+        </nav>
 
-          <div class="row-fluid">
-            <div class="span12">
-              <h3><a href="http://ericakochi.tumblr.com/">Erica Kochi</a> (UNICEF)</h3>
-              <p>
-                <img src="img/kochi.jpg" class="pull-left gap-right img-rounded" width="120"/>
-                <div class="talk-title">Title and abstract TBA</div>
-                <!-- Abstract -->
-              </p>
-              <!--p>[<a href="http://www.cs.cornell.edu/home/kleinber/wiki18-slides.pdf">slides</a>]</p-->
-              <div class="panel-heading" role="tab" id="heading-kochi">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" href="#collapse-kochi" aria-expanded="true" aria-controls="collapse-kochi">
-                    Bio
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse-kochi" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-kochi">
-                Erica co-founded and co-leads UNICEF’s Innovation Unit, a group tasked with identifying, prototyping and scaling technologies and practices that improve UNICEF’s work on the ground. Erica also serves as Innovation Advisor to UNICEF’s Executive Director. Erica co-taught ‘Design for UNICEF’ at NYU’s ITP and has lectured at the Yale School of Management, Harvard University, The Art Center, Stanford University School of Engineering, and Columbia School of International and Public Affairs on technology, innovation, design, and international development.
-              </div>
+        <!-- Subhead
+             ================================================== -->
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-9">
+                        <h1>Wiki Workshop 2019</h1>
+                        <p class="lead">
+                            A forum bringing together researchers exploring all aspects of Wikipedia, Wikidata, and other Wikimedia projects.
+                            Held at <a href="https://www2019.thewebconf.org/">The&nbsp;Web&nbsp;Conference&nbsp;2019</a> in San Francisco, Calif., May&nbsp;14, 2019.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
+        </header>
 
-          <div class="row-fluid">
-            <div class="span12">
-              <h3><a href="https://cs.stanford.edu/people/jure/">Jure Leskovec</a> (Stanford University)</h3>
-              <p>
-                <img src="img/leskovec.jpg" class="pull-left gap-right img-rounded" width="120"/>
-                <div class="talk-title">Making Wikipedia Safer</div>
-                <!-- Abstract -->
-              </p>
-              <!--p>[<a href="http://www.cs.cornell.edu/home/kleinber/wiki18-slides.pdf">slides</a>]</p-->
-              <div class="panel-heading" role="tab" id="heading-leskovec">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" href="#collapse-leskovec" aria-expanded="true" aria-controls="collapse-leskovec">
-                    Bio
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse-leskovec" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-leskovec">
-                Jure is an associate professor of Computer Science at Stanford University. His research focuses on mining and modeling large social and information networks, their evolution, and diffusion of information and influence over them. Problems he investigates are motivated by large scale data, the Web and online media.
-              </div>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-3">
+                    <div class="row" style="margin-top:1em">
+                        <div class="col-12" style="text-align:center">
+                            <!--div class="fb-like" data-href="https://wikiworkshop.org" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+                                 <br/>
+                                 <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://wikiworkshop.org" data-count="none" data-hashtags="WikiWorkshop2019" data-dnt="true">Tweet</a-->
+                            <a href="https://twitter.com/wikiworkshop" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @wikiworkshop</a>
+                        </div>
+                    </div>
+                    <nav class="bs-docs-sidebar sticky-top">
+                        <ul class="nav flex-column nav-pills">
+                            <li class="nav-item"><a class="nav-link active" href="#news">News</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#speakers">Invited speakers</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#papers">Accepted papers</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#dates">Key dates</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#call">Call for contributions</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#submission">Submission instructions</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#program-committee">Program committee</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#previous">Previous editions</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#organization">Organization</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-9" data-spy="scroll" data-target=".bs-docs-sidebar" data-offset="0">
+                    <!-- News
+                         ================================================== -->
+                    <section id="news">
+                        <div class="page-header">
+                            <h1>News</h1>
+                        </div>
+                        <ul>
+                            <!--li>May 1, 2018: Speaker slides linked from this page (see respective talk abstracts below).</li>
+                                 <li>Apr. 25, 2018: The workshop was a big success. Thanks to all participants, speakers, and poster presenters!</li>
+                                 <li>Apr. 5, 2018: Keynote titles and abstracts announced.</li-->
+                            <li>May 14, 2019: Workshop happened -- amazing!</li>
+                            <li>Apr. 29, 2019: PDFs of accepted papers available.</li>
+                            <li>Apr. 17, 2019: List of accepted papers announced.</li>
+                            <li>Apr. 4, 2019: Workshop schedule announced.</li>
+                            <li>Feb. 6, 2019: Denny Vrandečić confirmed as invited speaker.</li>
+                            <li>Feb. 6, 2019: Erica Kochi confirmed as invited speaker.</li>
+                            <li>Jan. 23, 2019: Jure Leskovec confirmed as invited speaker.</li>
+                            <li>Jan. 23, 2019: Neil Thompson confirmed as invited speaker.</li>
+                            <li>Jan. 23, 2019: Timnit Gebru confirmed as invited speaker.</li>
+                            <li>Jan. 20, 2019: Workshop date announced: Tuesday, May 14, 2019.</li>
+                            <li>Dec. 6, 2018: Wiki Workshop 2019 webpage online.</li>
+                        </ul>
+                    </section>
+
+                    <!-- Schedule
+                         ================================================== -->
+                    <section id="schedule">
+                        <div class="page-header">
+                            <h1>Schedule</h1>
+                        </div>
+                        <!--p>We will have a series of invited talks by academia and industry experts, as well as a combination of lightning talks and a poster session for the accepted papers.</p>
+                             <p>Details to be determined.</p-->
+                        <!--p>This schedule is tentative and subject to change.</p-->
+                        <table class="table table-nonfluid">
+                            <tbody>
+                                <tr><td> 9:00&nbsp;-&nbsp;9:20</td><td>Welcome and icebreaking</td></tr>
+                                <tr><td> 9:20&nbsp;-&nbsp;10:05</td><td>Invited talk: Denny Vrandečić</td></tr>
+                                <tr><td>10:05&nbsp;-&nbsp;10:17</td><td>Paper presentation: Mohsen Sayyadiharikandeh, Jonathan Gordon, Jose-Luis Ambite and Kristina Lerman: <i>Finding Prerequisite Relations Using the Wikipedia Clickstream</i></td></tr>
+                                <tr><td>10:17&nbsp;-&nbsp;10:30</td><td>Paper presentation: Xiaoxi Chelsy Xie, Isaac Johnson and Anne Gomez: <i>Detecting and Gauging Impact on Wikipedia Page Views</i></td></tr>
+                                <tr><td>10:30&nbsp;-&nbsp;11:00</td><td>Coffee break</td></tr>
+                                <tr><td>11:00&nbsp;-&nbsp;11:45</td><td>Invited talk: Timnit Gebru</td></tr>
+                                <tr><td>11:45&nbsp;-&nbsp;12:25</td><td>Poster spotlight presentations</td></tr>
+                                <tr><td>12:25&nbsp;-&nbsp;12:30</td><td>Poster setup</td></tr>
+                                <tr><td>12:30&nbsp;-&nbsp;14:00</td><td>Lunch and poster session</td></tr>
+                                <tr><td>14:00&nbsp;-&nbsp;14:12</td><td>Paper presentation: Swati Goel, Ashton Anderson and Leila Zia: <i>Thanks for Stopping By: A Study of “Thanks” Usage on Wikimedia</i></td></tr>
+                                <tr><td>14:12&nbsp;-&nbsp;14:25</td><td>Paper presentation: Ali Javanmardi and Lu Xiao: <i>What’s in the Content of Wikipedia’s Article for Deletion Discussions? Towards a Visual Analytic Approach</i></td></tr>
+                                <tr><td>14:25&nbsp;-&nbsp;15:10</td><td>Invited talk: Erica Kochi</td></tr>
+                                <tr><td>15:10&nbsp;-&nbsp;15:30</td><td>Open discussion</td></tr>
+                                <tr><td>15:30&nbsp;-&nbsp;16:00</td><td>Coffee break</td></tr>
+                                <tr><td>16:00&nbsp;-&nbsp;16:40</td><td>Invited talk: Jure Leskovec</td></tr>
+                                <tr><td>16:40&nbsp;-&nbsp;17:25</td><td>Invited talk: Neil Thompson</td></tr>
+                                <tr><td>17:25&nbsp;-&nbsp;17:30</td><td>Closing remarks</td></tr>
+                            </tbody>
+                        </table>
+                        <!--p>Tea breaks and lunches will be served in the exhibition hall located in Pavilion 1.</p-->
+                    </section>
+
+                    <!-- Speakers
+                         ================================================== -->
+                    <section id="speakers">
+                        <div class="page-header">
+                            <h1>Invited speakers</h1>
+                        </div>
+                        <!--p>More speakers to be announced soon&mdash;stay tuned!</p-->
+
+                        <div class="row">
+                            <div class="col-12">
+                                <h3><a href="https://ai.google/research/people/vrandecic">Denny Vrandečić</a> (Google)</h3>
+                                <p>
+                                    <img src="img/vrandecic.jpg" class="pull-left gap-right img-rounded" width="120"/>
+                                    <div class="talk-title">Beyond Wikidata</div>
+                                    Wikidata has quickly become a major wiki project. By becoming so, it has stretched what wikis can be successfully used for. We will take a look at the state of Wikidata, how it can help the Wikipedias (and other projects), and we'll discuss the question if we can take the wiki approach further to even more complex approaches, such as an Abstract Wikipedia.
+                                </p>
+                                <!--p>[<a href="http://www.cs.cornell.edu/home/kleinber/wiki18-slides.pdf">slides</a>]</p-->
+                                <div class="panel-heading" role="tab" id="heading-vrandecic">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#collapse-vrandecic" aria-expanded="true" aria-controls="collapse-vrandecic">
+                                            Bio
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-vrandecic" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-vrandecic">
+                                    Denny works at the Google Knowledge Graph. He previously has worked at the Karlsruhe Institute of Technology (2004-2012), the University of Southern California (2010), and as the project director of Wikidata at Wikimedia Deutschland (2012/13). His research interests are massive collaborative systems, knowledge bases, and the Semantic Web.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <h3><a href="http://ericakochi.tumblr.com/">Erica Kochi</a> (UNICEF)</h3>
+                                <p>
+                                    <img src="img/kochi.jpg" class="pull-left gap-right img-rounded" width="120"/>
+                                    <div class="talk-title">Title and abstract TBA</div>
+                                    <!-- Abstract -->
+                                </p>
+                                <!--p>[<a href="http://www.cs.cornell.edu/home/kleinber/wiki18-slides.pdf">slides</a>]</p-->
+                                <div class="panel-heading" role="tab" id="heading-kochi">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#collapse-kochi" aria-expanded="true" aria-controls="collapse-kochi">
+                                            Bio
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-kochi" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-kochi">
+                                    Erica co-founded and co-leads UNICEF’s Innovation Unit, a group tasked with identifying, prototyping and scaling technologies and practices that improve UNICEF’s work on the ground. Erica also serves as Innovation Advisor to UNICEF’s Executive Director. Erica co-taught ‘Design for UNICEF’ at NYU’s ITP and has lectured at the Yale School of Management, Harvard University, The Art Center, Stanford University School of Engineering, and Columbia School of International and Public Affairs on technology, innovation, design, and international development.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <h3><a href="https://cs.stanford.edu/people/jure/">Jure Leskovec</a> (Stanford University)</h3>
+                                <p>
+                                    <img src="img/leskovec.jpg" class="pull-left gap-right img-rounded" width="120"/>
+                                    <div class="talk-title">Making Wikipedia Safer</div>
+                                    <!-- Abstract -->
+                                </p>
+                                <!--p>[<a href="http://www.cs.cornell.edu/home/kleinber/wiki18-slides.pdf">slides</a>]</p-->
+                                <div class="panel-heading" role="tab" id="heading-leskovec">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#collapse-leskovec" aria-expanded="true" aria-controls="collapse-leskovec">
+                                            Bio
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-leskovec" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-leskovec">
+                                    Jure is an associate professor of Computer Science at Stanford University. His research focuses on mining and modeling large social and information networks, their evolution, and diffusion of information and influence over them. Problems he investigates are motivated by large scale data, the Web and online media.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <h3><a href="http://ai.stanford.edu/~tgebru/">Timnit Gebru</a> (Google)</h3>
+                                <p>
+                                    <img src="img/gebru.jpg" class="pull-left gap-right img-rounded" width="120"/>
+                                    <div class="talk-title">Understanding the Limitations of AI: When Algorithms Fail</div>
+                                    Automated decision making tools are currently used in high stakes scenarios. From natural language processing tools used to automatically determine one’s suitability for a job, to health diagnostic systems trained to determine a patient’s outcome, machine learning models are used to make decisions that can have serious consequences on people’s lives. In spite of the consequential nature of these use cases, vendors of such models are not required to perform specific tests showing the suitability of their models for a given task. Nor are they required to provide documentation describing the characteristics of their models, or disclose the results of algorithmic audits to ensure that certain groups are not unfairly treated. I will show some examples to examine the dire consequences of basing decisions entirely on machine learning based systems, and discuss recent work on auditing and exposing the gender and skin tone bias found in commercial gender classification systems. I will end with the concept of an AI datasheet to standardize information for datasets and pre-trained models, in order to push the field as a whole towards transparency and accountability.
+                                </p>
+                                <!--p>[<a href="http://www.cs.cornell.edu/home/kleinber/wiki18-slides.pdf">slides</a>]</p-->
+                                <div class="panel-heading" role="tab" id="heading-gebru">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#collapse-gebru" aria-expanded="true" aria-controls="collapse-gebru">
+                                            Bio
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-gebru" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-gebru">
+                                    Timnit is a research scientist in the Ethical AI team at Google.
+                                    Prior to that, she was a postdoc at Microsoft Research, New York, and
+                                    a PhD student in the Stanford Artificial Intelligence Laboratory. She
+                                    is currently studying the ethical considerations underlying any data
+                                    mining project, and methods of auditing and mitigating bias in
+                                    sociotechnical systems. The New York Times, MIT Tech Review and others
+                                    have recently covered her work. As a cofounder of the group Black in
+                                    AI, she works to both increase diversity in the field and reduce the
+                                    negative impacts of racial bias in training data used for human-
+                                    centric machine learning models.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <h3><a href="http://www.neil-t.com/">Neil Thompson</a> (MIT)</h3>
+                                <p>
+                                    <img src="img/thompson.jpg" class="pull-left gap-right img-rounded" width="120"/>
+                                    <div class="talk-title">Science is Shaped by Wikipedia: Evidence from a Randomized Control Trial</div>
+                                    “I sometimes think that general and popular treatises are almost as important for the progress of science as original work.” — Charles Darwin<br/>
+                                    As the largest encyclopedia in the world, it is not surprising that Wikipedia reflects the state of scientific knowledge.  However, Wikipedia is also one of the most accessed websites in the world, including by scientists, which suggests that it also has the potential to shape science. This paper shows that it does.
+                                    Incorporating ideas into Wikipedia leads to those ideas being used more in the scientific literature. We provide correlational evidence of this across thousands of Wikipedia articles and causal evidence of it through a randomized control trial where we add new scientific content to Wikipedia. In the months after uploading it, an average new Wikipedia article on Chemistry is read tens of thousands of times and causes changes to hundreds of related scientific journal articles.  Adding references to Wikipedia also has an effect, causing important scientific articles to get more citations.  Our findings speak not only to the influence of Wikipedia, but more broadly to the influence of repositories of knowledge and the role that they play in Science.
+                                </p>
+                                <!--p>[<a href="http://www.cs.cornell.edu/home/kleinber/wiki18-slides.pdf">slides</a>]</p-->
+                                <div class="panel-heading" role="tab" id="heading-thompson">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#collapse-thompson" aria-expanded="true" aria-controls="collapse-thompson">
+                                            Bio
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-thompson" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-thompson">
+                                    Neil is a Research Scientist at MIT’s Computer Science and Artificial Intelligence Lab and a Visiting Professor at the Lab for Innovation Science at Harvard. He is also an Associate Member of the Broad Institute, and was previously an Assistant Professor of Innovation and Strategy at the MIT Sloan School of Management, where he co-directed the Experimental Innovation Lab (X-Lab). Neil did his PhD in Business and Public Policy at Berkeley. Prior to academia, he worked at organizations such as Lawrence Livermore National Laboratories, Bain and Company, the United Nations, the World Bank, and the Canadian Parliament. 
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <!-- Papers
+                         ================================================== -->
+                    <section id="papers">
+                        <div class="page-header">
+                            <h1>Accepted papers</h1>
+                        </div>
+
+                        <div class="authors">Preeti Bhargava, Nemanja Spasojevic, Sarah Ellinger, Adithya Rao, Abhinand Menon, Saul Fuhrmann and Guoning Hu</div>
+                        Learning to Map Wikidata Entities to Predefined Topics
+                        [<a href="papers/Wiki_Workshop_2019_paper_1.pdf">PDF</a>]
+
+                        <div class="authors">Ali Javanmardi and Lu Xiao</div>
+                        What’s in the Content of Wikipedia’s Article for Deletion Discussions? Towards a Visual Analytic Approach
+                        [<a href="papers/Wiki_Workshop_2019_paper_2.pdf">PDF</a>]
+
+                        <div class="authors">Xiaoxi Chelsy Xie, Isaac Johnson and Anne Gomez</div>
+                        Detecting and Gauging Impact on Wikipedia Page Views
+                        [<a href="papers/Wiki_Workshop_2019_paper_3.pdf">PDF</a>]
+
+                        <div class="authors">Shaunak Mishra, Aasish Pappu and Narayan Bhamidipati</div>
+                        Inferring Advertiser Sentiment in Online Articles using Wikipedia Footnotes
+                        [<a href="papers/Wiki_Workshop_2019_paper_4.pdf">PDF</a>]
+
+                        <div class="authors">Mohsen Sayyadiharikandeh, Jonathan Gordon, Jose-Luis Ambite and Kristina Lerman</div>
+                        Finding Prerequisite Relations Using the Wikipedia Clickstream
+                        [<a href="papers/Wiki_Workshop_2019_paper_5.pdf">PDF</a>]
+
+                        <div class="authors">James Ashford, Liam Turner, Roger Whitaker, Alun Preece, Diane Felmlee and Don Towsley</div>
+                        Understanding the Signature of Controversial Wikipedia Articles through Motifs in Editor Revision Networks
+                        [<a href="papers/Wiki_Workshop_2019_paper_6.pdf">PDF</a>]
+
+                        <div class="authors">Chuankai An and Daniel Rockmore</div>
+                        Open Personalized Navigation on the Sandbox of Wiki Pages
+                        [<a href="papers/Wiki_Workshop_2019_paper_7.pdf">PDF</a>]
+
+                        <div class="authors">Swati Goel, Ashton Anderson and Leila Zia</div>
+                        Thanks for Stopping By: A Study of “Thanks” Usage on Wikimedia
+                        [<a href="papers/Wiki_Workshop_2019_paper_8.pdf">PDF</a>]
+
+                        <div class="authors">Nicolas Aspert, Volodymyr Miz, Benjamin Ricaud and Pierre Vandergheynst</div>
+                        A Graph-Structured Dataset for Wikipedia Research
+                        [<a href="papers/Wiki_Workshop_2019_paper_9.pdf">PDF</a>]
+
+                        <div class="authors">Gil Domingues and Carla Teixeira Lopes</div>
+                        Characterizing and Comparing Portuguese and English Wikipedia Medicine-Related Articles
+
+                        <div class="authors">Chander Iyer and Srinath Ravindran</div>
+                        Understanding Travel from Web Queries Using Domain Knowledge from Wikipedia
+                        [<a href="papers/Wiki_Workshop_2019_paper_12.pdf">PDF</a>]
+
+                        <div class="authors">Khonzodakhon Umarova and Eni Mustafaraj</div>
+                        How Partisanship and Perceived Political Bias Affect Wikipedia Entries of News Sources
+                        [<a href="papers/Wiki_Workshop_2019_paper_15.pdf">PDF</a>]
+
+                        <div class="authors">Charlotte Rudnik, Thibault Ehrhart, Olivier Ferret, Denis Teyssou, Raphaël Troncy and Xavier Tannier</div>
+                        Searching News Articles Using an Event Knowledge Graph Leveraged by Wikidata
+                        [<a href="papers/Wiki_Workshop_2019_paper_16.pdf">PDF</a>]
+
+                        <div class="authors">Iris Qu, Nithum Thain and Yiqing Hua</div>
+                        WikiDetox Visualization
+                        [<a href="papers/Wiki_Workshop_2019_paper_17.pdf">PDF</a>]
+
+                        <div class="authors">Olga Slivko</div>
+                        Online “Brain Gain”: Do Immigrants Return Knowledge Home?
+                        [<a href="papers/Wiki_Workshop_2019_paper_18.pdf">PDF</a>]
+
+                        <div class="authors">Lei Zheng, Christopher M. Albano and Jeffrey V. Nickerson</div>
+                        Steps toward Understanding the Design and Evaluation Spaces of Bot and Human Knowledge Production Systems
+                        [<a href="papers/Wiki_Workshop_2019_paper_19.pdf">PDF</a>]
+
+                        <div class="authors">Cristian Consonni, David Laniado and Alberto Montresor</div>
+                        Discovering Topical Contexts from Links in Wikipedia
+
+                    </section>
+
+                    <!-- Dates
+                         ================================================== -->
+                    <section id="dates">
+                        <div class="page-header">
+                            <h1>Key dates</h1>
+                        </div>
+                        <p>Workshop date: Tuesday, May 14, 2019</p>
+                        <p><b>If authors want paper to appear in proceedings:</b></p>
+                        <ul>
+                            <li>Submission deadline: January 31, 2019</li>
+                            <li>Author feedback: February 21, 2019</li>
+                            <li>Camera-ready version due: March 3, 2019</li>
+                        </ul>
+                        <p><b>If authors <i>do not</i> want paper to appear in proceedings:</b></p>
+                        <ul>
+                            <li>Submission deadline: March 14, 2019</li>
+                            <li>Author feedback: March 28, 2019</li>
+                        </ul>
+
+                        Note: If you need a visa to travel to U.S. and your application for the visa depends on your workshop paper being accepted, we would advise you to submit your workshop paper for the January 31 deadline.
+
+                    </section>
+
+                    <!-- Call for contributions
+                         ================================================== -->
+                    <section id="call">
+                        <div class="page-header">
+                            <h1>Call for contributions</h1>
+                        </div>
+                        <p>
+                            Wikipedia is one of the most popular sites on the Web, a main source of knowledge for
+                            a large fraction of Internet users, and one of the very few projects that make not only their
+                            content but also many activity logs available to the public. Furthermore, other Wikimedia projects,
+                            such as Wikidata and Wikimedia Commons, have been created to share other types of
+                            knowledge with the world for free. For a variety of reasons (quality and quantity of content,
+                            reach in many languages, process of content production, availability of data, etc.) such projects
+                            have become important objects of study for researchers across many subfields of the computational
+                            and social sciences, such as social network analysis, artificial intelligence, linguistics,
+                            natural language processing, social psychology, education, anthropology, political science,
+                            human&ndash;computer interaction, and cognitive science.
+                        </p>
+                        <p>
+                            The goal of this workshop
+                            is to bring together researchers exploring all aspects of Wikimedia projects such as Wikipedia,
+                            Wikidata, and Commons. With members of the Wikimedia Foundation's Research team on the
+                            organizing committee and with the experience of successful
+                            workshops in
+                            <a href="https://wikiworkshop.org/2015/">2015</a>,
+                            <a href="https://wikiworkshop.org/2016/">2016</a>,
+                            <a href="https://wikiworkshop.org/2017/">2017</a>, and
+                            <a href="https://wikiworkshop.org/2018/">2018</a>,
+                            we aim to continue facilitating a direct pathway for exchanging ideas between the organization that
+                            coordinates Wikimedia projects and the researchers interested in studying them.
+                        </p>
+                        <p>Topics of interest include, but are not limited to</p>
+                        <ul>
+                            <li>new technologies and initiatives to grow content, quality, diversity, and participation across Wikimedia projects</li>
+                            <li>use of bots, algorithms, and crowdsourcing strategies to curate, source, or verify content and structured data</li>
+                            <li>bias in content and gaps of knowledge</li>
+                            <li>diversity of Wikimedia editors and users</li>
+                            <li>detection of low-quality, promotional, or fake content, as well as fake accounts (e.g., sock puppets)</li>
+                            <li>questions related to community health (e.g., sentiment analysis, harassment detection)</li>
+                            <li>understanding editor motivations, engagement models, and incentives</li>
+                            <li>Wikimedia consumer motivations and their needs: readers, researchers, tool/API developers</li>
+                            <li>innovative uses of Wikipedia and other Wikimedia projects for AI and NLP applications</li>
+                            <li>consensus-finding and conflict resolution on editorial issues</li>
+                            <li>participation in discussions and their dynamics</li>
+                            <li>dynamics of content reuse across projects and the impact of policies and community norms on reuse</li>
+                            <li>privacy</li>
+                            <li>collaborative content creation (unstructured, semi-structured, or structured)</li>
+                            <li>innovative uses of Wikimedia projects' content and consumption patterns as sensors for real-world events, culture, etc.</li>
+                            <li>open-source research code, datasets, and tools to support research on Wikimedia contents and communities</li>
+                        </ul>
+                        <p>Papers should be 1 to 8 pages long and will be published on the workshop webpage and optionally (depending on the authors' choice) in the workshop proceedings.
+                            The review process will be single-blind (as opposed to double-blind), i.e., authors should include their names and affiliations in their submissions.
+                            Authors whose papers are accepted to the workshop will have the opportunity to participate in a poster session.
+                            <!--They are welcome to present their poster at both instances of the workshop (at WWW and ICWSM)
+                                 if it was accepted to one of them.--></p>
+
+                        <p style="font-weight:bold">We explicitly encourage the submission of preliminary work in the form of extended abstracts (1 or 2 pages).</p>
+                    </section>
+
+                    <!-- Submission instructions
+                         ================================================== -->
+                    <section id="submission">
+                        <div class="page-header">
+                            <h1>Submission instructions</h1>
+                        </div>
+
+                        <p>Papers should be 1 to 8 pages long. We explicitly encourage the submission of
+                            preliminary work in the form of extended abstracts (1 or 2 pages). No need to anonymize your submissions.</p>
+                        <p>For submission dates, see above.</p>
+
+                        <ul>
+                            <li>Format: <a href="https://www.acm.org/publications/proceedings-template">ACM SIG conference proceedings template</a> (use <tt>sample-sigconf.pdf</tt> as the template)</li>
+                            <li>Submission site:
+                                <a href="https://easychair.org/conferences/?conf=wikiworkshop2019">https://easychair.org/conferences/?conf=wikiworkshop2019</a>
+                            </li>
+                        </ul>
+
+                    </section>
+
+                    <!-- Program committee
+                         ================================================== -->
+                    <section id="program-committee">
+                        <div class="page-header">
+                            <h1>Program committee</h1>
+                        </div>
+                        <ul>
+                            <li>Michele Catasta, Stanford University</li>
+                            <li>Lucas Dixon, Jigsaw</li>
+                            <li>Besnik Fetahu, L3S Hannover</li>
+                            <li>Andrea Forte, Drexel University</li>
+                            <li>Gary Hsieh, University of Washington</li>
+                            <li>Yiqing Hua, Cornell University</li>
+                            <li>Isaac Johnson, Wikimedia Foundation</li>
+                            <li>Os Keyes, University of Washington</li>
+                            <li>Markus Kroetzsch, University of Dresden</li>
+                            <li>Florian Lemmerich, RWTH Aachen University</li>
+                            <li>Lauren Maggio, Uniformed Services University</li>
+                            <li>David McDonald, University of Washington</li>
+                            <li>Jonathan Morgan, Wikimedia Foundation</li>
+                            <li>Andr&eacute; Panisson, ISI Foundation</li>
+                            <li>Daniela Paolotti, ISI Foundation</li>
+                            <li>Tiziano Piccardi, EPFL</li>
+                            <li>Dario Rossi, Huawei</li>
+                            <li>Diego Saez-Trumper, Wikimedia Foundation</li>
+                            <li>Markus Strohmaier, RWTH Aachen University</li>
+                            <li>Nithum Thain, Jigsaw</li>
+                            <li>Michele Tizzoni, ISI Foundation</li>
+                            <li>Morten Warncke-Wang, Wikimedia Foundation</li>
+                            <li>Joe Wass, Crossref</li>
+                            <li>Ramtin Yazdanian, EPFL</li>
+                            <li>Amy Zhang, MIT</li>
+                        </ul>
+
+                        <!-- Previous editions
+                             ================================================== -->
+                        <section id="previous">
+                            <div class="page-header">
+                                <h1>Previous editions</h1>
+                            </div>
+                            <ul>
+                                <li><a href="https://wikiworkshop.org/2018">@ WWW 2018 (Lyon, France)</a></li>
+                                <li><a href="https://wikiworkshop.org/2017">@ WWW 2017 (Perth, Australia)</a></li>
+                                <li><a href="https://wikiworkshop.org/2016">@ WWW 2016 (Montreal, Canada) and ICWSM 2016 (Cologne, Germany)</a></li>
+                                <li><a href="https://wikiworkshop.org/2015">@ ICWSM 2015 (Oxford, UK)</a></li>
+                            </ul>
+
+                            <!-- Organization
+                                 ================================================== -->
+                            <section id="organization">
+                                <div class="page-header">
+                                    <h1>Organization</h1>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <h3><a href="https://dlab.epfl.ch/people/west/">Robert West</a></h3>
+                                        <p>Bob is an assistant professor of Computer Science at EPFL, where he heads the Data Science Lab. His research aims to understand, predict, and enhance human behavior in social and information networks by developing techniques in data science, data mining, network analysis, machine learning, and natural language processing. He holds a PhD in computer science from Stanford University.</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <h3><a href="http://www.visionresearchwitch.com/">Miriam Redi</a></h3>
+                                        <p>Miriam is a Research Scientist at the Wikimedia Foundation and Visiting Research Fellow at King's College London. Formerly, she worked as a Research Scientist at Yahoo! Labs in Barcelona and Nokia Bell Labs in Cambridge. She received her PhD from EURECOM, Sophia Antipolis. She conducts research in social multimedia computing, working on fair, interpretable, multimodal machine learning solutions to improve knowledge equity.</p>
+                                    </div>
+                                    <!--/div>
+                                         <div class="row"-->
+                                    <div class="col-4">
+                                        <h3><a href="https://en.wikipedia.org/wiki/User:DarTar">Dario Taraborelli</a></h3>
+                                        <p>Dario is a social computing researcher and the Wikimedia Foundation's Head of Research. His current interests focus on online collaboration, open science, and the measurement and discoverability of scientific knowledge. He holds a PhD in cognitive science from the &Eacute;cole des Hautes &Eacute;tudes en Sciences Sociales.</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Contact
+                                 ================================================== -->
+                            <section id="contact">
+                                <div class="page-header">
+                                    <h1>Contact</h1>
+                                </div>
+                                <p>Please direct your questions to wikiworkshop<script type="text/javascript">document.write('@')</script>googlegroups<script type="text/javascript">document.write('.')</script>com.</p>
+                            </section>
+
+                </div>
+
             </div>
-          </div>
 
-          <div class="row-fluid">
-            <div class="span12">
-              <h3><a href="http://ai.stanford.edu/~tgebru/">Timnit Gebru</a> (Google)</h3>
-              <p>
-                <img src="img/gebru.jpg" class="pull-left gap-right img-rounded" width="120"/>
-                <div class="talk-title">Understanding the Limitations of AI: When Algorithms Fail</div>
-                Automated decision making tools are currently used in high stakes scenarios. From natural language processing tools used to automatically determine one’s suitability for a job, to health diagnostic systems trained to determine a patient’s outcome, machine learning models are used to make decisions that can have serious consequences on people’s lives. In spite of the consequential nature of these use cases, vendors of such models are not required to perform specific tests showing the suitability of their models for a given task. Nor are they required to provide documentation describing the characteristics of their models, or disclose the results of algorithmic audits to ensure that certain groups are not unfairly treated. I will show some examples to examine the dire consequences of basing decisions entirely on machine learning based systems, and discuss recent work on auditing and exposing the gender and skin tone bias found in commercial gender classification systems. I will end with the concept of an AI datasheet to standardize information for datasets and pre-trained models, in order to push the field as a whole towards transparency and accountability.
-              </p>
-              <!--p>[<a href="http://www.cs.cornell.edu/home/kleinber/wiki18-slides.pdf">slides</a>]</p-->
-              <div class="panel-heading" role="tab" id="heading-gebru">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" href="#collapse-gebru" aria-expanded="true" aria-controls="collapse-gebru">
-                    Bio
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse-gebru" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-gebru">
-                Timnit is a research scientist in the Ethical AI team at Google.
-                Prior to that, she was a postdoc at Microsoft Research, New York, and
-                a PhD student in the Stanford Artificial Intelligence Laboratory. She
-                is currently studying the ethical considerations underlying any data
-                mining project, and methods of auditing and mitigating bias in
-                sociotechnical systems. The New York Times, MIT Tech Review and others
-                have recently covered her work. As a cofounder of the group Black in
-                AI, she works to both increase diversity in the field and reduce the
-                negative impacts of racial bias in training data used for human-
-                centric machine learning models.
-              </div>
+        </div> <!-- /container -->
+
+        <!-- Footer
+             ================================================== -->
+        <footer class="footer">
+            <div class="container">
             </div>
-          </div>
+        </footer>
 
-          <div class="row-fluid">
-            <div class="span12">
-              <h3><a href="http://www.neil-t.com/">Neil Thompson</a> (MIT)</h3>
-              <p>
-                <img src="img/thompson.jpg" class="pull-left gap-right img-rounded" width="120"/>
-                <div class="talk-title">Science is Shaped by Wikipedia: Evidence from a Randomized Control Trial</div>
-                “I sometimes think that general and popular treatises are almost as important for the progress of science as original work.” — Charles Darwin<br/>
-                As the largest encyclopedia in the world, it is not surprising that Wikipedia reflects the state of scientific knowledge.  However, Wikipedia is also one of the most accessed websites in the world, including by scientists, which suggests that it also has the potential to shape science. This paper shows that it does.
-                Incorporating ideas into Wikipedia leads to those ideas being used more in the scientific literature. We provide correlational evidence of this across thousands of Wikipedia articles and causal evidence of it through a randomized control trial where we add new scientific content to Wikipedia. In the months after uploading it, an average new Wikipedia article on Chemistry is read tens of thousands of times and causes changes to hundreds of related scientific journal articles.  Adding references to Wikipedia also has an effect, causing important scientific articles to get more citations.  Our findings speak not only to the influence of Wikipedia, but more broadly to the influence of repositories of knowledge and the role that they play in Science.
-              </p>
-              <!--p>[<a href="http://www.cs.cornell.edu/home/kleinber/wiki18-slides.pdf">slides</a>]</p-->
-              <div class="panel-heading" role="tab" id="heading-thompson">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" href="#collapse-thompson" aria-expanded="true" aria-controls="collapse-thompson">
-                    Bio
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse-thompson" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-thompson">
-                Neil is a Research Scientist at MIT’s Computer Science and Artificial Intelligence Lab and a Visiting Professor at the Lab for Innovation Science at Harvard. He is also an Associate Member of the Broad Institute, and was previously an Assistant Professor of Innovation and Strategy at the MIT Sloan School of Management, where he co-directed the Experimental Innovation Lab (X-Lab). Neil did his PhD in Business and Public Policy at Berkeley. Prior to academia, he worked at organizations such as Lawrence Livermore National Laboratories, Bain and Company, the United Nations, the World Bank, and the Canadian Parliament. 
-              </div>
-            </div>
-          </div>
-
-        </section>
-
-        <!-- Papers
-        ================================================== -->
-        <section id="papers">
-          <div class="page-header">
-            <h1>Accepted papers</h1>
-          </div>
-
-          <div class="authors">Preeti Bhargava, Nemanja Spasojevic, Sarah Ellinger, Adithya Rao, Abhinand Menon, Saul Fuhrmann and Guoning Hu</div>
-          Learning to Map Wikidata Entities to Predefined Topics
-          [<a href="papers/Wiki_Workshop_2019_paper_1.pdf">PDF</a>]
-
-          <div class="authors">Ali Javanmardi and Lu Xiao</div>
-          What’s in the Content of Wikipedia’s Article for Deletion Discussions? Towards a Visual Analytic Approach
-          [<a href="papers/Wiki_Workshop_2019_paper_2.pdf">PDF</a>]
-
-          <div class="authors">Xiaoxi Chelsy Xie, Isaac Johnson and Anne Gomez</div>
-          Detecting and Gauging Impact on Wikipedia Page Views
-          [<a href="papers/Wiki_Workshop_2019_paper_3.pdf">PDF</a>]
-
-          <div class="authors">Shaunak Mishra, Aasish Pappu and Narayan Bhamidipati</div>
-          Inferring Advertiser Sentiment in Online Articles using Wikipedia Footnotes
-          [<a href="papers/Wiki_Workshop_2019_paper_4.pdf">PDF</a>]
-
-          <div class="authors">Mohsen Sayyadiharikandeh, Jonathan Gordon, Jose-Luis Ambite and Kristina Lerman</div>
-          Finding Prerequisite Relations Using the Wikipedia Clickstream
-          [<a href="papers/Wiki_Workshop_2019_paper_5.pdf">PDF</a>]
-
-          <div class="authors">James Ashford, Liam Turner, Roger Whitaker, Alun Preece, Diane Felmlee and Don Towsley</div>
-          Understanding the Signature of Controversial Wikipedia Articles through Motifs in Editor Revision Networks
-          [<a href="papers/Wiki_Workshop_2019_paper_6.pdf">PDF</a>]
-
-          <div class="authors">Chuankai An and Daniel Rockmore</div>
-          Open Personalized Navigation on the Sandbox of Wiki Pages
-          [<a href="papers/Wiki_Workshop_2019_paper_7.pdf">PDF</a>]
-
-          <div class="authors">Swati Goel, Ashton Anderson and Leila Zia</div>
-          Thanks for Stopping By: A Study of “Thanks” Usage on Wikimedia
-          [<a href="papers/Wiki_Workshop_2019_paper_8.pdf">PDF</a>]
-
-          <div class="authors">Nicolas Aspert, Volodymyr Miz, Benjamin Ricaud and Pierre Vandergheynst</div>
-          A Graph-Structured Dataset for Wikipedia Research
-          [<a href="papers/Wiki_Workshop_2019_paper_9.pdf">PDF</a>]
-
-          <div class="authors">Gil Domingues and Carla Teixeira Lopes</div>
-          Characterizing and Comparing Portuguese and English Wikipedia Medicine-Related Articles
-
-          <div class="authors">Chander Iyer and Srinath Ravindran</div>
-          Understanding Travel from Web Queries Using Domain Knowledge from Wikipedia
-          [<a href="papers/Wiki_Workshop_2019_paper_12.pdf">PDF</a>]
-
-          <div class="authors">Khonzodakhon Umarova and Eni Mustafaraj</div>
-          How Partisanship and Perceived Political Bias Affect Wikipedia Entries of News Sources
-          [<a href="papers/Wiki_Workshop_2019_paper_15.pdf">PDF</a>]
-
-          <div class="authors">Charlotte Rudnik, Thibault Ehrhart, Olivier Ferret, Denis Teyssou, Raphaël Troncy and Xavier Tannier</div>
-          Searching News Articles Using an Event Knowledge Graph Leveraged by Wikidata
-          [<a href="papers/Wiki_Workshop_2019_paper_16.pdf">PDF</a>]
-
-          <div class="authors">Iris Qu, Nithum Thain and Yiqing Hua</div>
-          WikiDetox Visualization
-          [<a href="papers/Wiki_Workshop_2019_paper_17.pdf">PDF</a>]
-
-          <div class="authors">Olga Slivko</div>
-          Online “Brain Gain”: Do Immigrants Return Knowledge Home?
-          [<a href="papers/Wiki_Workshop_2019_paper_18.pdf">PDF</a>]
-
-          <div class="authors">Lei Zheng, Christopher M. Albano and Jeffrey V. Nickerson</div>
-          Steps toward Understanding the Design and Evaluation Spaces of Bot and Human Knowledge Production Systems
-          [<a href="papers/Wiki_Workshop_2019_paper_19.pdf">PDF</a>]
-
-          <div class="authors">Cristian Consonni, David Laniado and Alberto Montresor</div>
-          Discovering Topical Contexts from Links in Wikipedia
-
-        </section>
-
-        <!-- Dates
-        ================================================== -->
-        <section id="dates">
-          <div class="page-header">
-            <h1>Key dates</h1>
-          </div>
-          <p>Workshop date: Tuesday, May 14, 2019</p>
-          <p><b>If authors want paper to appear in proceedings:</b></p>
-          <ul>
-            <li>Submission deadline: January 31, 2019</li>
-            <li>Author feedback: February 21, 2019</li>
-            <li>Camera-ready version due: March 3, 2019</li>
-          </ul>
-          <p><b>If authors <i>do not</i> want paper to appear in proceedings:</b></p>
-          <ul>
-            <li>Submission deadline: March 14, 2019</li>
-            <li>Author feedback: March 28, 2019</li>
-          </ul>
-
-          Note: If you need a visa to travel to U.S. and your application for the visa depends on your workshop paper being accepted, we would advise you to submit your workshop paper for the January 31 deadline.
-
-        </section>
-
-        <!-- Call for contributions
-        ================================================== -->
-        <section id="call">
-          <div class="page-header">
-            <h1>Call for contributions</h1>
-          </div>
-          <p>
-          Wikipedia is one of the most popular sites on the Web, a main source of knowledge for
-          a large fraction of Internet users, and one of the very few projects that make not only their
-          content but also many activity logs available to the public. Furthermore, other Wikimedia projects,
-          such as Wikidata and Wikimedia Commons, have been created to share other types of
-          knowledge with the world for free. For a variety of reasons (quality and quantity of content,
-          reach in many languages, process of content production, availability of data, etc.) such projects
-          have become important objects of study for researchers across many subfields of the computational
-          and social sciences, such as social network analysis, artificial intelligence, linguistics,
-          natural language processing, social psychology, education, anthropology, political science,
-          human&ndash;computer interaction, and cognitive science.
-          </p>
-          <p>
-          The goal of this workshop
-          is to bring together researchers exploring all aspects of Wikimedia projects such as Wikipedia,
-          Wikidata, and Commons. With members of the Wikimedia Foundation's Research team on the
-          organizing committee and with the experience of successful
-          workshops in
-          <a href="https://wikiworkshop.org/2015/">2015</a>,
-          <a href="https://wikiworkshop.org/2016/">2016</a>,
-          <a href="https://wikiworkshop.org/2017/">2017</a>, and
-          <a href="https://wikiworkshop.org/2018/">2018</a>,
-          we aim to continue facilitating a direct pathway for exchanging ideas between the organization that
-          coordinates Wikimedia projects and the researchers interested in studying them.
-          </p>
-          <p>Topics of interest include, but are not limited to</p>
-          <ul>
-            <li>new technologies and initiatives to grow content, quality, diversity, and participation across Wikimedia projects</li>
-            <li>use of bots, algorithms, and crowdsourcing strategies to curate, source, or verify content and structured data</li>
-            <li>bias in content and gaps of knowledge</li>
-            <li>diversity of Wikimedia editors and users</li>
-            <li>detection of low-quality, promotional, or fake content, as well as fake accounts (e.g., sock puppets)</li>
-            <li>questions related to community health (e.g., sentiment analysis, harassment detection)</li>
-            <li>understanding editor motivations, engagement models, and incentives</li>
-            <li>Wikimedia consumer motivations and their needs: readers, researchers, tool/API developers</li>
-            <li>innovative uses of Wikipedia and other Wikimedia projects for AI and NLP applications</li>
-            <li>consensus-finding and conflict resolution on editorial issues</li>
-            <li>participation in discussions and their dynamics</li>
-            <li>dynamics of content reuse across projects and the impact of policies and community norms on reuse</li>
-            <li>privacy</li>
-            <li>collaborative content creation (unstructured, semi-structured, or structured)</li>
-            <li>innovative uses of Wikimedia projects' content and consumption patterns as sensors for real-world events, culture, etc.</li>
-            <li>open-source research code, datasets, and tools to support research on Wikimedia contents and communities</li>
-          </ul>
-          <p>Papers should be 1 to 8 pages long and will be published on the workshop webpage and optionally (depending on the authors' choice) in the workshop proceedings.
-            The review process will be single-blind (as opposed to double-blind), i.e., authors should include their names and affiliations in their submissions.
-            Authors whose papers are accepted to the workshop will have the opportunity to participate in a poster session.
-            <!--They are welcome to present their poster at both instances of the workshop (at WWW and ICWSM)
-            if it was accepted to one of them.--></p>
-
-          <p style="font-weight:bold">We explicitly encourage the submission of preliminary work in the form of extended abstracts (1 or 2 pages).</p>
-        </section>
-
-        <!-- Submission instructions
-        ================================================== -->
-        <section id="submission">
-          <div class="page-header">
-            <h1>Submission instructions</h1>
-          </div>
-
-          <p>Papers should be 1 to 8 pages long. We explicitly encourage the submission of
-            preliminary work in the form of extended abstracts (1 or 2 pages). No need to anonymize your submissions.</p>
-          <p>For submission dates, see above.</p>
-
-          <ul>
-            <li>Format: <a href="https://www.acm.org/publications/proceedings-template">ACM SIG conference proceedings template</a> (use <tt>sample-sigconf.pdf</tt> as the template)</li>
-            <li>Submission site:
-              <a href="https://easychair.org/conferences/?conf=wikiworkshop2019">https://easychair.org/conferences/?conf=wikiworkshop2019</a>
-            </li>
-          </ul>
-
-        </section>
-
-        <!-- Program committee
-        ================================================== -->
-        <section id="program-committee">
-          <div class="page-header">
-            <h1>Program committee</h1>
-          </div>
-          <ul>
-            <li>Michele Catasta, Stanford University</li>
-            <li>Lucas Dixon, Jigsaw</li>
-            <li>Besnik Fetahu, L3S Hannover</li>
-            <li>Andrea Forte, Drexel University</li>
-            <li>Gary Hsieh, University of Washington</li>
-            <li>Yiqing Hua, Cornell University</li>
-            <li>Isaac Johnson, Wikimedia Foundation</li>
-            <li>Os Keyes, University of Washington</li>
-            <li>Markus Kroetzsch, University of Dresden</li>
-            <li>Florian Lemmerich, RWTH Aachen University</li>
-            <li>Lauren Maggio, Uniformed Services University</li>
-            <li>David McDonald, University of Washington</li>
-            <li>Jonathan Morgan, Wikimedia Foundation</li>
-            <li>Andr&eacute; Panisson, ISI Foundation</li>
-            <li>Daniela Paolotti, ISI Foundation</li>
-            <li>Tiziano Piccardi, EPFL</li>
-            <li>Dario Rossi, Huawei</li>
-            <li>Diego Saez-Trumper, Wikimedia Foundation</li>
-            <li>Markus Strohmaier, RWTH Aachen University</li>
-            <li>Nithum Thain, Jigsaw</li>
-            <li>Michele Tizzoni, ISI Foundation</li>
-            <li>Morten Warncke-Wang, Wikimedia Foundation</li>
-            <li>Joe Wass, Crossref</li>
-            <li>Ramtin Yazdanian, EPFL</li>
-            <li>Amy Zhang, MIT</li>
-          </ul>
-
-        <!-- Previous editions
-        ================================================== -->
-        <section id="previous">
-          <div class="page-header">
-            <h1>Previous editions</h1>
-          </div>
-          <ul>
-            <li><a href="https://wikiworkshop.org/2018">@ WWW 2018 (Lyon, France)</a></li>
-            <li><a href="https://wikiworkshop.org/2017">@ WWW 2017 (Perth, Australia)</a></li>
-            <li><a href="https://wikiworkshop.org/2016">@ WWW 2016 (Montreal, Canada) and ICWSM 2016 (Cologne, Germany)</a></li>
-            <li><a href="https://wikiworkshop.org/2015">@ ICWSM 2015 (Oxford, UK)</a></li>
-          </ul>
-
-        <!-- Organization
-        ================================================== -->
-        <section id="organization">
-          <div class="page-header">
-            <h1>Organization</h1>
-          </div>
-          <div class="row-fluid">
-            <div class="span4">
-              <h3><a href="https://dlab.epfl.ch/people/west/">Robert West</a></h3>
-              <p>Bob is an assistant professor of Computer Science at EPFL, where he heads the Data Science Lab. His research aims to understand, predict, and enhance human behavior in social and information networks by developing techniques in data science, data mining, network analysis, machine learning, and natural language processing. He holds a PhD in computer science from Stanford University.</p>
-            </div>
-            <div class="span4">
-              <h3><a href="http://www.visionresearchwitch.com/">Miriam Redi</a></h3>
-              <p>Miriam is a Research Scientist at the Wikimedia Foundation and Visiting Research Fellow at King's College London. Formerly, she worked as a Research Scientist at Yahoo! Labs in Barcelona and Nokia Bell Labs in Cambridge. She received her PhD from EURECOM, Sophia Antipolis. She conducts research in social multimedia computing, working on fair, interpretable, multimodal machine learning solutions to improve knowledge equity.</p>
-            </div>
-          <!--/div>
-          <div class="row-fluid"-->
-            <div class="span4">
-              <h3><a href="https://en.wikipedia.org/wiki/User:DarTar">Dario Taraborelli</a></h3>
-              <p>Dario is a social computing researcher and the Wikimedia Foundation's Head of Research. His current interests focus on online collaboration, open science, and the measurement and discoverability of scientific knowledge. He holds a PhD in cognitive science from the &Eacute;cole des Hautes &Eacute;tudes en Sciences Sociales.</p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Contact
-        ================================================== -->
-        <section id="contact">
-          <div class="page-header">
-            <h1>Contact</h1>
-          </div>
-          <p>Please direct your questions to wikiworkshop<script type="text/javascript">document.write('@')</script>googlegroups<script type="text/javascript">document.write('.')</script>com.</p>
-        </section>
-
-      </div>
-
-    </div>
-
-    </div> <!-- /container -->
-
-    <!-- Footer
-    ================================================== -->
-    <footer class="footer">
-      <div class="container">
-      </div>
-    </footer>
-
-<!-- Le javascript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="bootstrap/assets/js/jquery.js"></script>
-<script src="bootstrap/assets/js/bootstrap-transition.js"></script>
-<script src="bootstrap/assets/js/bootstrap-alert.js"></script>
-<script src="bootstrap/assets/js/bootstrap-modal.js"></script>
-<script src="bootstrap/assets/js/bootstrap-dropdown.js"></script>
-<script src="bootstrap/assets/js/bootstrap-scrollspy.js"></script>
-<script src="bootstrap/assets/js/bootstrap-tab.js"></script>
-<script src="bootstrap/assets/js/bootstrap-tooltip.js"></script>
-<script src="bootstrap/assets/js/bootstrap-popover.js"></script>
-<script src="bootstrap/assets/js/bootstrap-button.js"></script>
-<script src="bootstrap/assets/js/bootstrap-collapse.js"></script>
-<script src="bootstrap/assets/js/bootstrap-carousel.js"></script>
-<script src="bootstrap/assets/js/bootstrap-typeahead.js"></script>
-<script src="bootstrap/assets/js/bootstrap-affix.js"></script>
-
-<script src="bootstrap/assets/js/holder.js"></script>
-<script src="bootstrap/assets/js/prettify.js"></script>
-
-<script src="bootstrap/assets/js/application.js"></script>
-
-<!--script src="bootstrap/js/bootstrap.min.js"></script-->
-</body>
+        <!-- Le javascript
+             ================================================== -->
+        <script src="../lib/jquery-3.5.1.min.js"></script>
+        <script src="../lib/bootstrap-4.5.0-dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
