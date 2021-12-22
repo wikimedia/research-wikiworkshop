@@ -16,11 +16,9 @@
 .nav-pills .nav-link.active {
     color: #fff;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
-    background-color: #408000;
-
 }
 a {
-    color: #408000;
+    color: #ce6724;
 }
 
 .gap-right { margin-right:5px; }
