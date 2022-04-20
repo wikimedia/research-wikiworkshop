@@ -26,3 +26,9 @@ a {
 .authors { font-weight:bold; margin-top:3mm; }
 .talk-title { font-weight:bold; margin-bottom:3mm; }
 .table-nonfluid { width: auto !important; }
+.person {
+    margin-bottom: 25px;
+}
+.person p {
+    margin-bottom: 0;
+}
