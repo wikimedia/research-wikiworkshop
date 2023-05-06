@@ -17,9 +17,17 @@
     text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
     background-color: #000080;
 }
+
+a.register-btn {
+    background-color: #71D1B3;
+    border-radius: 10px;
+    padding: 15px;
+}
+
 a {
     color: #000080;
 }
+
 
 .gap-right { margin-right:5px; }
 .gap-left { margin-left:5px; }
